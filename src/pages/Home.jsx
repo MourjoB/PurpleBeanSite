@@ -1,9 +1,21 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Users, Award, Globe, TrendingUp } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const features = [
     {
@@ -14,7 +26,7 @@ const Home = () => {
     {
       icon: Globe,
       title: 'Global Reach',
-      description: 'Serving businesses across 50+ countries worldwide',
+      description: 'Serving businesses across 20+ countries worldwide',
     },
     {
       icon: Users,
@@ -32,17 +44,17 @@ const Home = () => {
     {
       name: 'Flavoured Coffee',
       description: 'Premium flavored coffee blends for cafes and restaurants',
-      image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+      image: 'https://t3.ftcdn.net/jpg/12/42/96/54/360_F_1242965459_kpunghVpfVLm1sUCS5kXMrTAY5OsKIBd.jpg',
     },
     {
       name: 'Plain Coffee',
       description: 'High-quality instant coffee in various processing methods',
-      image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+      image: 'https://img.freepik.com/free-photo/top-view-coffee-powder-beans_23-2148254984.jpg',
     },
     {
       name: 'Coffee Premix',
       description: 'Ready-to-use coffee premixes for commercial applications',
-      image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+      image: 'https://img.freepik.com/free-photo/coconut-palm-sugar-wooden-spoon-isolated-white-background_123827-32696.jpg?semt=ais_hybrid&w=740',
     },
   ];
 
@@ -309,9 +321,28 @@ const Home = () => {
             </Link>
           </motion.div>
         </div>
+
+        {/* Scroll to Top Button */}
+        <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+          showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
+            alt="Scroll to top"
+            className="w-6 h-6"
+          />
+        </button>
       </section>
     </motion.div>
+
+    
   );
 };
+
+
+
 
 export default Home;

@@ -1,9 +1,20 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { sendContactEmail } from '../utils/emailService';
 
 const Contact = () => {
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,6 +24,8 @@ const Contact = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -313,6 +326,18 @@ This message was sent from the Purple Bean Agro contact form.`
             </div>
           </motion.div>
         </div>
+          <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+            showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
+            alt="Scroll to top"
+            className="w-6 h-6"
+          />
+        </button>
       </section>
     </motion.div>
   );

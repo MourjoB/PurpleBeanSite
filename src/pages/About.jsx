@@ -1,7 +1,26 @@
 import { motion } from 'framer-motion';
 import { Award, Users, Globe, Leaf, Target, Heart, Shield, Zap } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const About = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    subject: '',
+    message: '',
+  });
+
   const values = [
     {
       icon: Leaf,
@@ -348,6 +367,18 @@ const About = () => {
 
           </motion.div>
         </div>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+            showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
+            alt="Scroll to top"
+            className="w-6 h-6"
+          />
+        </button>
       </section>
     </motion.div>
   );

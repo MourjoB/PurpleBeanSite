@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 import { Menu, X, Search } from 'lucide-react';
 import { filterItems, products } from '../data.js';
 
-const Navbar = ({ onSearch, searchTerm }) => {
+const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [localSearchTerm, setLocalSearchTerm] = useState(searchTerm || '');
@@ -80,11 +80,7 @@ const Navbar = ({ onSearch, searchTerm }) => {
               transition={{ duration: 0.5 }}
               className="bg-white p-1 rounded-full"
             >
-              <img
-                src={logo}
-                alt="Logo"
-                className="h-16 w-19 rounded-full object-cover"
-              />
+              <img src={logo} alt="Logo" className="h-16 w-19 rounded-full object-cover" />
             </motion.div>
             <span className={`font-bold text-xl ${scrolled ? 'text-gray-900' : 'text-white'}`}>
               Purple Bean Agro
@@ -94,9 +90,9 @@ const Navbar = ({ onSearch, searchTerm }) => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.path}
+                onClick={() => handleNavClick(item.path)}
                 className={`relative px-3 py-2 text-xl font-medium transition-colors mb-4 duration-200 ${
                   location.pathname === item.path
                     ? scrolled ? 'text-primary-600' : 'text-white'
@@ -110,10 +106,10 @@ const Navbar = ({ onSearch, searchTerm }) => {
                     className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
                   />
                 )}
-              </Link>
+              </button>
             ))}
 
-            {/* Search Bar - Always visible */}
+             {/* Search Bar */}
             <div className="relative mb-4">
               <form onSubmit={handleSearchSubmit}>
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -127,7 +123,7 @@ const Navbar = ({ onSearch, searchTerm }) => {
               </form>
             </div>
           </div>
-
+          
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -140,6 +136,7 @@ const Navbar = ({ onSearch, searchTerm }) => {
         </div>
       </div>
 
+      
       {/* Mobile Navigation */}
       <motion.div
         initial={{ opacity: 0, height: 0 }}
@@ -151,19 +148,22 @@ const Navbar = ({ onSearch, searchTerm }) => {
       >
         <div className="px-4 py-4 space-y-2">
           {navItems.map((item) => (
-            <Link
+            <button
               key={item.name}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              onClick={() => {
+                setIsOpen(false);
+                handleNavClick(item.path);
+              }}
+              className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
                 location.pathname === item.path
                   ? 'text-primary-600 bg-primary-50'
                   : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
               }`}
             >
               {item.name}
-            </Link>
+            </button>
           ))}
+
 
           {/* Mobile Search Bar */}
           <div className="pt-4">

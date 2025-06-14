@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { ArrowRight, Star, CheckCircle, ChevronDown, ChevronRight } from 'lucide-react';
 import ProductModal from '../components/ProductModal';
 import { products, categoryStructure, categories } from '../data';
@@ -12,6 +12,15 @@ const Products = ({ searchTerm = '' }) => {
   const [expandedSubcategory, setExpandedSubcategory] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const filteredProducts = products.filter((product) => {
   const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
@@ -31,7 +40,7 @@ const Products = ({ searchTerm = '' }) => {
     // For categories like 'Plain Coffee' or 'Crystal Coffee'
     matchesSubcategory = product.subcategory === selectedSubcategory;
   }
-}
+} 
 
 
   if (
@@ -475,6 +484,18 @@ const Products = ({ searchTerm = '' }) => {
             </motion.button>
           </motion.div>
         </div>
+        <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+          showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
+            alt="Scroll to top"
+            className="w-6 h-6"
+          />
+        </button>
       </section>
 
       {/* Product Modal */}
