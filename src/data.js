@@ -337,7 +337,7 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Tropical mango infused coffee for an exotic brew',
     detailedDescription: 'Mango Flavoured Coffee offers a refreshing tropical twist to traditional coffee. A creative and exotic beverage perfect for novelty and seasonal café menus.',
-    image: 'https://images.unsplash.com/photo-1503481766315-7a586b20f66d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D',
+    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
     features: ['Mango Essence', 'Tropical Notes', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.6,
     price: 'From ₹450/kg',
@@ -349,78 +349,6 @@ export const products = [
     }
   },
 
-  // {
-  //   id: 19,
-  //   name: 'Classic NDC',
-  //   category: 'NDC',
-  //   description: 'Non-Dairy Creamer powder for coffee applications',
-  //   detailedDescription: 'Our Classic NDC is a high-quality non-dairy creamer specifically formulated for coffee applications. It provides excellent whitening, smooth texture, and enhanced mouthfeel to coffee beverages.',
-  //   image: 'https://images.pexels.com/photos/4117625/pexels-photo-4117625.jpeg',
-  //   features: ['Non-Dairy', 'Excellent Whitening', 'Smooth Texture', 'Coffee Optimized'],
-  //   rating: 4.4,
-  //   price: 'From ₹240/kg',
-  //   specifications: {
-  //     'Type': 'Non-Dairy Creamer',
-  //     'Solubility': 'Instantly Soluble',
-  //     'Protein': '2-4%',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 20,
-  //   name: 'Premium NDC',
-  //   category: 'NDC',
-  //   description: 'Premium grade non-dairy creamer with rich texture',
-  //   detailedDescription: 'Our Premium NDC is crafted to deliver a creamier mouthfeel and richer body. Designed for premium coffee blends and vending applications requiring top-quality whiteners.',
-  //   image: 'https://images.pexels.com/photos/4117625/pexels-photo-4117625.jpeg',
-  //   features: ['High Quality', 'Smooth Mouthfeel', 'Enhanced Creaminess', 'Vending Friendly'],
-  //   rating: 4.6,
-  //   price: 'From ₹240/kg',
-  //   specifications: {
-  //     'Type': 'Non-Dairy Creamer',
-  //     'Solubility': 'Instantly Soluble',
-  //     'Protein': '2-4%',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 21,
-  //   name: 'Budget NDC',
-  //   category: 'NDC',
-  //   description: 'Cost-effective non-dairy creamer for mass use',
-  //   detailedDescription: 'Budget NDC is formulated to offer reliable performance in coffee applications at a competitive price point. A popular choice for high-volume vending and institutional use.',
-  //   image: 'https://images.pexels.com/photos/4117625/pexels-photo-4117625.jpeg',
-  //   features: ['Economical', 'Instant Mix', 'Good Whitening', 'Bulk Friendly'],
-  //   rating: 4.2,
-  //   price: 'From ₹240/kg',
-  //   specifications: {
-  //     'Type': 'Non-Dairy Creamer',
-  //     'Solubility': 'Instantly Soluble',
-  //     'Protein': '2-4%',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 22,
-  //   name: 'High Protein NDC',
-  //   category: 'NDC',
-  //   description: 'Protein-enriched non-dairy creamer for functional use',
-  //   detailedDescription: 'This High Protein NDC variant is enriched with added protein content, providing additional nutritional benefits without compromising on solubility and mouthfeel.',
-  //   image: 'https://images.pexels.com/photos/4117625/pexels-photo-4117625.jpeg',
-  //   features: ['Added Protein', 'Nutritional Boost', 'Smooth Consistency', 'Functional Use'],
-  //   rating: 4.5,
-  //   price: 'From ₹240/kg',
-  //   specifications: {
-  //     'Type': 'Non-Dairy Creamer',
-  //     'Solubility': 'Instantly Soluble',
-  //     'Protein': '4-6%',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
   {
     id: 25,
     name: 'Kadak Chai / Plain Tea',
@@ -3421,120 +3349,6 @@ export const products = [
   }
 },
 {
-  id: 177, 
-  name: '100% ARABICA - AAA', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'Premium AAA grade Arabica Cherry beans with high aroma and flavor.',
-  detailedDescription:
-    'Sourced from the finest estates, our AAA Arabica Cherry beans are top-grade and carefully sorted for size and quality. Perfect for specialty roasters and high-end cafes.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Top Grade', 'High Aroma', 'Even Roasting', 'Specialty Use'],
-  rating: 4.9,
-  price: 'From ₹480/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
-  id: 178, 
-  name: '100% ARABICA - AA', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'Grade AA Arabica Cherry beans with balanced profile.',
-  detailedDescription:
-    'Arabica Cherry AA beans are known for their balanced flavor, ideal for medium roast profiles. Suitable for premium blends.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Balanced Flavor', 'Medium Roast', 'Smooth Finish'],
-  rating: 4.8,
-  price: 'From ₹460/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
-  id: 179, 
-  name: '100% ARABICA - A', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'Arabica A grade beans ideal for consistent roasting.',
-  detailedDescription:
-    'Arabica A offers a great balance between quality and cost. Suitable for retail blends and café-style brews.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Consistent Roast', 'Balanced Cup', 'Cost Effective'],
-  rating: 4.6,
-  price: 'From ₹440/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
-  id: 180, 
-  name: '100% ARABICA - B', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'Grade B Arabica Cherry beans for budget-friendly brewing.',
-  detailedDescription:
-    'A more economical grade of Arabica that still delivers a pleasing cup, especially in blends or mass-market use.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Economical', 'Good for Blends', 'Mild Aroma'],
-  rating: 4.4,
-  price: 'From ₹400/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
-  id: 181, 
-  name: '100% ARABICA - PB', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'Peaberry Arabica Cherry beans for a unique flavor profile.',
-  detailedDescription:
-    'Peaberry beans are round and dense, offering a more concentrated flavor. Excellent for niche and specialty brews.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Peaberry Shape', 'Richer Taste', 'Specialty Roasting'],
-  rating: 4.7,
-  price: 'From ₹490/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
-  id: 182, 
-  name: '100% ARABICA - C', 
-  category: 'Coffee Beans', 
-  subcategory: 'Green Beans', 
-  subSubcategory: 'Arabica Cherry', 
-  description: 'C grade Arabica Cherry beans for large scale use.',
-  detailedDescription:
-    'A commercial-grade Arabica for bulk brewing, vending, or price-sensitive blends. Still retains the charm of Arabica.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
-  features: ['Budget Friendly', 'Bulk Supply', 'Fair Quality'],
-  rating: 4.2,
-  price: 'From ₹380/kg',
-  specifications: {
-    'Variant': 'Dark,Mild,Light', 
-    'Packaging': 'CUSTOM',
-    'Shelf Life': '12 months'
-  }
-},
-{
   id: 183,
   name: '100% ROBUSTA - AAA',
   category: 'Coffee Beans',
@@ -3614,7 +3428,7 @@ export const products = [
   subSubcategory: 'Robusta Cherry',
   description: 'Robusta Cherry PB (Peaberry) beans with concentrated flavor and aroma.',
   detailedDescription: 'Peaberry beans are rounder and denser, delivering a more focused and richer taste ideal for specialty brews.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
+  image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Peaberry Quality', 'Rich & Round Taste', 'Specialty Use'],
   rating: 4.8,
   price: 'From ₹275/kg',
@@ -3632,7 +3446,7 @@ export const products = [
   subSubcategory: 'Robusta Cherry',
   description: 'Entry-level Robusta Cherry C-grade beans for basic use or reprocessing.',
   detailedDescription: 'These beans are typically used in low-end blends or for industrial applications where price takes priority over cup quality.',
-  image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/ZC/SU/HG/43277858/decaffinated-coffee-500x500.jpg',
+  image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Low Cost', 'Utility Grade', 'Reprocessing Use'],
   rating: 4.1,
   price: 'From ₹210/kg',
@@ -4207,7 +4021,7 @@ export const products = [
   subcategory: 'Instant Tea',
   description: 'Robust and bold instant black tea for classic tea drinkers.',
   detailedDescription: 'Our Instant Black Tea offers the timeless strength and aroma of traditional black tea in a quick-dissolve format. Whether served hot or cold, it delivers deep flavor and rich color instantly — perfect for offices, vending machines, and everyday sippers.',
-  image: 'https://thedailyguardian.com/wp-content/uploads/2024/09/360_F_308200475_G0NDeL0Ep3KqpbntrAJEifYv2qvqxfK4.jpg',
+  image: 'https://img.freepik.com/free-photo/black-coffee-cup_74190-7411.jpg?semt=ais_hybrid&w=740',
   features: ['Quick Brew', 'Deep Color', 'Classic Aroma', 'Perfect for Hot & Cold Use'],
   rating: 4.9,
   price: 'From ₹320/kg',
@@ -4656,9 +4470,10 @@ export const products = [
   subcategory: 'CTC Tea',
   description: 'Broken Orange Pekoe (BOP) grade for a strong and brisk brew.',
   detailedDescription: 'BOP is one of the most popular CTC tea grades, offering a perfect balance of color, strength, and aroma for daily consumption.',
+    image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Strong Liquor', 'Daily Use', 'Balanced Astringency'],
   rating: 4.7,
-  price: 'From ₹240/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade BOP',
     'Consumer Appeal': 'Households, Offices',
@@ -4676,7 +4491,7 @@ export const products = [
   image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Malty Flavor', 'Deep Color', 'Great with Milk'],
   rating: 4.8,
-  price: 'From ₹250/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade BP',
     'Consumer Appeal': 'Tea stalls, Milk tea consumers',
@@ -4694,7 +4509,7 @@ export const products = [
   image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Quick Brew', 'Brisk Taste', 'Strong Infusion'],
   rating: 4.6,
-  price: 'From ₹230/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade OF',
     'Consumer Appeal': 'Quick-service setups',
@@ -4712,7 +4527,7 @@ export const products = [
   image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Extra Strong', 'Deep Color', 'High Yield'],
   rating: 4.7,
-  price: 'From ₹220/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade PD',
     'Consumer Appeal': 'Hotels, Dhabas',
@@ -4730,7 +4545,7 @@ export const products = [
   image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Dark Brew', 'Intense Strength', 'Budget Friendly'],
   rating: 4.5,
-  price: 'From ₹210/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade RD',
     'Consumer Appeal': 'Mass market, Vending',
@@ -4748,7 +4563,7 @@ export const products = [
   image: 'https://media.istockphoto.com/id/185100288/photo/cup-of-tea-with-a-teaspoon.jpg?s=612x612&w=0&k=20&c=xqyS3DwEtet7OI44ziFxpHKVWkMqVYk028J8KxIi_34=',
   features: ['Ultra Fine', 'High Caffeine Hit', 'Quick Infusion'],
   rating: 4.6,
-  price: 'From ₹200/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CTC Grade Dust',
     'Consumer Appeal': 'Premix manufacturers, Institutional buyers',
@@ -4767,7 +4582,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/4/298120947/UG/BH/AV/8725392/green-tea-extract.jpeg',
   features: ['Cold Soluble', 'Antioxidant Rich', 'Low Caffeine'],
   rating: 4.8,
-  price: 'From ₹600/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CWS',
     'Applications': 'Health drinks, Beverages',
@@ -4786,7 +4601,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/4/298120947/UG/BH/AV/8725392/green-tea-extract.jpeg',
   features: ['Hot Soluble', 'High EGCG', 'Nutraceutical Grade'],
   rating: 4.9,
-  price: 'From ₹620/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'HWS',
     'Applications': 'Soups, Supplements, Instant Tea',
@@ -4805,7 +4620,7 @@ export const products = [
   image: 'https://images.contentstack.io/v3/assets/bltf1dd6317cb2088d3/blt61c6d42b901f951c/66aaf6e5cfbd23e8187d9267/Black_Tea_Extract_(Fermented_Camellia_Sinensis).jpg',
   features: ['Cold Soluble', 'Rich Color', 'Natural Polyphenols'],
   rating: 4.7,
-  price: 'From ₹580/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'CWS',
     'Applications': 'RTDs, Iced Tea, Energy Blends',
@@ -4824,7 +4639,7 @@ export const products = [
   image: 'https://images.contentstack.io/v3/assets/bltf1dd6317cb2088d3/blt61c6d42b901f951c/66aaf6e5cfbd23e8187d9267/Black_Tea_Extract_(Fermented_Camellia_Sinensis).jpg',
   features: ['Hot Soluble', 'Classic Strength', 'Instant Format'],
   rating: 4.8,
-  price: 'From ₹590/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'HWS',
     'Applications': 'Instant Tea, Premix Blends',
@@ -4842,7 +4657,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Naturally Sweet', 'Immunity Boosting', 'No Refined Sugar'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Traditional & wellness seekers',
@@ -4860,7 +4675,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Digestive Aid', 'Strong Aroma', 'Winter Favourite'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Everyday health seekers',
@@ -4878,7 +4693,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',  
   features: ['Sweet Aroma', 'Cafe Style', 'Unique Flavour'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Dessert tea lovers',
@@ -4896,7 +4711,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Calming', 'Naturally Sweet', 'Aromatic'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Soothing & gentle',
@@ -4914,7 +4729,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Tropical Taste', 'Exotic Blend', 'Versatile Use'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Tropical tea fans',
@@ -4932,7 +4747,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Floral Aroma', 'Stress Relieving', 'Elegant'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Premium wellness segment',
@@ -4950,7 +4765,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Citrusy Freshness', 'Detox Friendly', 'Zero Caffeine'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Detox & clarity',
@@ -4968,7 +4783,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Berry Aroma', 'Youth Appeal', 'Vibrant Taste'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Young & fruity lovers',
@@ -4980,7 +4795,7 @@ export const products = [
   id: 263,
   name: 'Raspberry Tea',
   category: 'Tea',
-  subcategory: 'Flavoured Tea',
+  subcategory: 'Request Price',
   description: 'Tart and fruity raspberry-infused tea.',
   detailedDescription: 'This tea delivers a punch of flavor with subtle tartness — great as a refreshing iced or hot option.',
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
@@ -5004,7 +4819,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Cocoa Rich', 'Creamy Taste', 'Cafe Style'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Dessert beverage fans',
@@ -5022,7 +4837,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Vitamin C Boost', 'Zesty Profile', 'Bright Liquor'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Citrus tea lovers',
@@ -5040,7 +4855,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Multi-Berry Blend', 'Aromatic & Tart', 'Rich in Color'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Fruity & fun segment',
@@ -5058,7 +4873,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Tropical Twist', 'Smooth Texture', 'Sweet Finish'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Consumer Appeal': 'Exotic tea lovers',
@@ -5076,7 +4891,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Buttery Taste', 'Creamy Finish', 'Great With Milk'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Mild',
     'Consumer Appeal': 'Dessert tea lovers',
@@ -5094,7 +4909,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Berry Flavor', 'Sweet & Tangy', 'Youthful Vibe'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Mild',
     'Consumer Appeal': 'Fruity & fun',
@@ -5112,7 +4927,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Tropical Vibes', 'Mild Sweetness', 'Novelty Flavor'],
   rating: 4.7,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild',
     'Consumer Appeal': 'Novelty drinkers',
@@ -5130,7 +4945,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Smoky Aroma', 'Earthy Taste', 'Kulhad-Style Experience'],
   rating: 4.9,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Consumer Appeal': 'Desi and nostalgic',
@@ -5148,7 +4963,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Zesty Kick', 'Morning Favorite', 'Hot or Iced'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Strong',
     'Consumer Appeal': 'Fresh and vibrant drinkers',
@@ -5166,7 +4981,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Tea-Coffee Fusion', 'Bold & Robust', 'Unique Profile'],
   rating: 4.7,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Consumer Appeal': 'Coffee converts & explorers',
@@ -5184,7 +4999,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Nutty Flavor', 'Milk Tea Friendly', 'Rich & Aromatic'],
   rating: 4.9,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Strong',
     'Consumer Appeal': 'Premium milk chai segment',

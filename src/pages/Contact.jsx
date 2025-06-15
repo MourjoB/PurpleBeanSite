@@ -128,7 +128,7 @@ This message was sent from the Purple Bean Agro contact form.`
   const handleScheduleCall = () => {
     const subject = encodeURIComponent('Schedule a Call - Purple Bean Agro');
     const body = encodeURIComponent(
-      'Hello,\n\nI would like to schedule a call to discuss your coffee products and services.\n\nBest regards,'
+      'Hello,\n\nI would like to schedule a call to discuss your coffee products and services at your convenience.\n\nBest regards,'
     );
     const mailtoLink = `mailto:purplebeanagro@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
@@ -212,7 +212,7 @@ This message was sent from the Purple Bean Agro contact form.`
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                  <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="your@email.com" />
+                  <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="name123@gmail.com" />
                 </div>
               </div>
               <div>
@@ -328,7 +328,7 @@ This message was sent from the Purple Bean Agro contact form.`
         </div>
           <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
             showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >

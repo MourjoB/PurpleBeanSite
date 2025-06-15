@@ -3,6 +3,9 @@ import { useState,useEffect } from 'react';
 import { ArrowRight, Star, CheckCircle, ChevronDown, ChevronRight } from 'lucide-react';
 import ProductModal from '../components/ProductModal';
 import { products, categoryStructure, categories } from '../data';
+import { Loader2 } from 'lucide-react';
+
+
 
 const Products = ({ searchTerm = '' }) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -13,6 +16,14 @@ const Products = ({ searchTerm = '' }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, [selectedCategory, selectedSubcategory, selectedSubSubcategory, searchTerm]);
+
   
   useEffect(() => {
     const handleScroll = () => {
@@ -104,12 +115,17 @@ const Products = ({ searchTerm = '' }) => {
       setSelectedSubcategory(subcategory);
       setSelectedSubSubcategory('');
       setExpandedSubcategory('');
+      setExpandedCategory(''); // ✅ closes main dropdown
     }
+
   };
 
   const handleSubSubcategoryClick = (subSubcategory) => {
     setSelectedSubSubcategory(subSubcategory);
+    setExpandedCategory(''); // ✅ ensure dropdown closes
+    setExpandedSubcategory('');
   };
+
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
@@ -361,87 +377,11 @@ const Products = ({ searchTerm = '' }) => {
       {/* Products Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProducts.map((product, index) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-100 overflow-hidden cursor-pointer"
-                onClick={() => handleProductClick(product)}
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-100"
-                  />
-                  {product.isNew && (
-                    <div className="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
-                      NEW
-                    </div>
-                  )}
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-primary-600 font-medium">
-                      {product.category}
-                      {product.subcategory && (
-                        <span className="text-gray-500"> - {product.subcategory}</span>
-                      )}
-                      {product.subSubcategory && (
-                        <span className="text-gray-400"> - {product.subSubcategory}</span>
-                      )}
-                    </span>
-                    <div className="flex items-center space-x-1">
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <span className="text-sm text-gray-600">{product.rating}</span>
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {product.name}
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-4 line-clamp-2">
-                    {product.description}
-                  </p>
-                  
-                  <div className="space-y-2 mb-4">
-                    {product.features.slice(0, 2).map((feature) => (
-                      <div key={feature} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-primary-600" />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-semibold text-gray-900">
-                      {product.price}
-                    </span>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="bg-primary-600 text-white px-6 py-2 rounded-full font-medium hover:bg-primary-700 transition-colors duration-100 flex items-center space-x-2"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleProductClick(product);
-                      }}
-                    >
-                      <span>View Details</span>
-                      <ArrowRight className="h-4 w-4" />
-                    </motion.button>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {filteredProducts.length === 0 && (
+          {loading ? (
+            <div className="flex justify-center items-center h-64">
+              <Loader2 className="animate-spin h-10 w-10 text-primary-600" />
+            </div>
+          ) : filteredProducts.length === 0 ? (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -455,9 +395,90 @@ const Products = ({ searchTerm = '' }) => {
                 Try adjusting your search terms or filters
               </p>
             </motion.div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredProducts.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-100 overflow-hidden cursor-pointer"
+                  onClick={() => handleProductClick(product)}
+                >
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-100"
+                    />
+                    {product.isNew && (
+                      <div className="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
+                        NEW
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm text-primary-600 font-medium">
+                        {product.category}
+                        {product.subcategory && (
+                          <span className="text-gray-500"> - {product.subcategory}</span>
+                        )}
+                        {product.subSubcategory && (
+                          <span className="text-gray-400"> - {product.subSubcategory}</span>
+                        )}
+                      </span>
+                      <div className="flex items-center space-x-1">
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <span className="text-sm text-gray-600">{product.rating}</span>
+                      </div>
+                    </div>
+
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      {product.name}
+                    </h3>
+
+                    <p className="text-gray-600 mb-4 line-clamp-2">
+                      {product.description}
+                    </p>
+
+                    <div className="space-y-2 mb-4">
+                      {product.features.slice(0, 2).map((feature) => (
+                        <div key={feature} className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-primary-600" />
+                          <span className="text-sm text-gray-600">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <span className="text-lg font-semibold text-gray-900">
+                        {product.price}
+                      </span>
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="bg-primary-600 text-white px-6 py-2 rounded-full font-medium hover:bg-primary-700 transition-colors duration-100 flex items-center space-x-2"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleProductClick(product);
+                        }}
+                      >
+                        <span>View Details</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </motion.button>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           )}
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
@@ -486,7 +507,7 @@ const Products = ({ searchTerm = '' }) => {
         </div>
         <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
           showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         >

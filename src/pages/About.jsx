@@ -369,7 +369,7 @@ const About = () => {
         </div>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
             showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >

@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 import { Menu, X, Search } from 'lucide-react';
 import { filterItems, products } from '../data.js';
 
-const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
+const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [localSearchTerm, setLocalSearchTerm] = useState(searchTerm || '');
@@ -25,7 +25,6 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
     setLocalSearchTerm(searchTerm || '');
   }, [searchTerm]);
 
-  // Update search results when local search term changes
   useEffect(() => {
     const results = filterItems(products, localSearchTerm);
     setSearchResults(results);
@@ -42,17 +41,18 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
     const value = e.target.value;
     setLocalSearchTerm(value);
 
-    // Filter products using the filterItems function
-    const results = filterItems(products, value);
-    setSearchResults(results);
-
     if (onSearch) {
-      onSearch(value);
+      onSearch(value); // Notify parent to update search results
     }
 
-    // Navigate to products page if there's a search term and not already on products page
+    // Navigate to /products when searching
     if (value && location.pathname !== '/products') {
       navigate('/products');
+    }
+
+    // Handle case when input is cleared and already on /products
+    if (!value && location.pathname === '/products') {
+      onSearch(''); // Clear product filter
     }
   };
 
@@ -61,6 +61,14 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
     if (localSearchTerm && location.pathname !== '/products') {
       navigate('/products');
     }
+  };
+
+  const handleNavClick = (path) => {
+    if (onClearSearch) {
+      onClearSearch();
+    }
+    setLocalSearchTerm('');
+    navigate(path);
   };
 
   return (
@@ -109,7 +117,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
               </button>
             ))}
 
-             {/* Search Bar */}
+            {/* Search Bar */}
             <div className="relative mb-4">
               <form onSubmit={handleSearchSubmit}>
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -123,7 +131,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
               </form>
             </div>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -136,7 +144,6 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
         </div>
       </div>
 
-      
       {/* Mobile Navigation */}
       <motion.div
         initial={{ opacity: 0, height: 0 }}
@@ -163,7 +170,6 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
               {item.name}
             </button>
           ))}
-
 
           {/* Mobile Search Bar */}
           <div className="pt-4">

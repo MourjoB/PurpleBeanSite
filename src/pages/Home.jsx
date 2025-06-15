@@ -91,7 +91,7 @@ const Home = () => {
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Premium Coffee
@@ -103,7 +103,7 @@ const Home = () => {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             Your trusted B2B partner for high-quality coffee products. 
@@ -113,7 +113,7 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center sm:items-start"
           >
             <Link to="/products">
@@ -325,7 +325,7 @@ const Home = () => {
         {/* Scroll to Top Button */}
         <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center ${
+        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
           showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         >
