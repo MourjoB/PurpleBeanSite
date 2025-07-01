@@ -255,32 +255,30 @@ const About = () => {
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-primary-200"></div>
             
             {timeline.map((item, index) => (
-              <motion.div
-                key={item.year}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'justify-start' : 'justify-end'
-                } mb-12`}
-              >
-                <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                  <div className="bg-white p-6 rounded-2xl shadow-lg">
-                    <div className="text-2xl font-bold text-primary-600 mb-2">
-                      {item.year}
-                    </div>
-                    <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600">
-                      {item.description}
-                    </p>
+            <motion.div
+              key={item.year}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'} mb-12`}
+            >
+              <div className={`w-full md:w-6/12 max-w-md ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'} mx-auto md:mx-0`}>
+                <div className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-full break-words">
+                  <div className="text-2xl font-bold text-primary-600 mb-2">
+                    {item.year}
                   </div>
+                  <h3 className="text-xl font-semibold text-purple-700 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 whitespace-pre-line">
+                    {item.description}
+                  </p>
                 </div>
-                
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
-              </motion.div>
+              </div>
+
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
+            </motion.div>
             ))}
           </div>
         </div>
