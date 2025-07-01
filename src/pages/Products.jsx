@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import { ArrowRight, Star, CheckCircle, ChevronDown, ChevronRight } from 'lucide-react';
 import ProductModal from '../components/ProductModal';
 import { products, categoryStructure, categories } from '../data';
-import { Loader2 } from 'lucide-react';
+import { ArrowUp, MessageCircle, Loader2 } from 'lucide-react';
 
 
 
@@ -164,7 +164,7 @@ const Products = ({ searchTerm = '' }) => {
             className="text-xl text-white/90 max-w-3xl mx-auto"
           >
             Discover our comprehensive range of premium coffee products, 
-            sourced globally and processed with the highest quality standards.
+            which are processed with the highest quality standards.
           </motion.p>
         </div>
       </section>
@@ -455,7 +455,7 @@ const Products = ({ searchTerm = '' }) => {
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-semibold text-gray-900">
+                      <span className="text-lg font-semibold text-purple-500">
                         {product.price}
                       </span>
                       <motion.button
@@ -511,12 +511,20 @@ const Products = ({ searchTerm = '' }) => {
           showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         >
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
-            alt="Scroll to top"
-            className="w-6 h-6"
-          />
+          <ArrowUp className="h-6 w-6 text-white" />
         </button>
+
+        <a
+          href="https://wa.me/918101287339?text=Hello%20Purple%20Bean%2C%20I%27m%20interested%20in%20your%20products."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with us on WhatsApp"
+          title="Chat with us on WhatsApp"
+          className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-200 flex items-center justify-center"
+        >
+          <MessageCircle className="h-6 w-6 text-white" />
+        </a>
+
       </section>
 
       {/* Product Modal */}

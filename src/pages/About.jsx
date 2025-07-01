@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, Users, Globe, Leaf, Target, Heart, Shield, Zap } from 'lucide-react';
+import { ArrowUp, MessageCircle, Award, Users, Globe, Leaf, Target, Heart, Shield, Zap } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const About = () => {
@@ -46,27 +46,27 @@ const About = () => {
 
   const timeline = [
     {
-      year: '2008',
+      // year: '2008',
       title: 'Company Founded',
       description: 'Started with a vision to provide premium natural products to businesses worldwide',
     },
     {
-      year: '2012',
+      // year: '2012',
       title: 'Global Expansion',
       description: 'Expanded operations to serve clients across 20 countries',
     },
     {
-      year: '2016',
-      title: 'ISO Certification',
-      description: 'Achieved ISO 9001:2015 and ISO 22000:2018 certifications',
+      // year: '2016',
+      title: 'Retail Expansion',
+      description: 'Expanded into national and international retail markets, strengthening our global presence and customer reach.',
     },
     {
-      year: '2020',
+      // year: '2020',y
       title: 'Digital Transformation',
       description: 'Launched advanced digital platforms for better customer experience',
     },
     {
-      year: '2024',
+      // year: '2024',
       title: 'Sustainable Future',
       description: 'Leading the industry in sustainable and eco-friendly practices',
     },
@@ -75,22 +75,22 @@ const About = () => {
   const team = [
     {
       name: 'Utsav Jain',
-      role: 'CEO & Founder',
+      role: 'Director',
       image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg',
-      bio: '5+ years in natural products industry',
+      bio: 'Strategic leader driving the growth of our B2B coffee business through innovation, strong partnerships, and a deep understanding of global market dynamics.',
     },
     {
-      name: 'Mourjo Basu',
-      role: 'Head of Quality Assurance',
+      name: 'Mourjo Bosu',
+      role: 'Director',
       image: 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg',
-      bio: 'Expert in pharmaceutical quality standards',
+      bio: 'Operational expert ensuring top-tier quality and regulatory standards across our coffee supply chain, with a strong focus on fulfilling the needs of clients worldwide.',
     },
-    {
-      name: 'Emily Rodriguez',
-      role: 'Sales Director',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg',
-      bio: 'International business development specialist',
-    },
+    // {
+    //   name: 'Emily Rodriguez',
+    //   role: 'Sales Director',
+    //   image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg',
+    //   bio: 'International business development specialist',
+    // },
   ];
 
   const handleScheduleCall = () => {
@@ -108,7 +108,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-16"
+      className="pt-16 overflow-x-hidden"
     >
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 py-20 mt-3">
@@ -123,10 +123,8 @@ const About = () => {
                 About Us
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
-                For over 15 years, we've been dedicated to providing the highest quality 
-                natural products to businesses worldwide. Our commitment to excellence, 
-                sustainability, and customer satisfaction has made us a trusted partner 
-                in the natural products industry.
+                With years of experience, we've been dedicated to providing the highest quality natural products to businesses worldwide. 
+                Our commitment to excellence, sustainability, and customer satisfaction has made us a trusted partner in the natural products industry.
               </p>
             </motion.div>
             
@@ -272,7 +270,7 @@ const About = () => {
                     <div className="text-2xl font-bold text-primary-600 mb-2">
                       {item.year}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-purple-700 mb-2">
                       {item.title}
                     </h3>
                     <p className="text-gray-600">
@@ -372,13 +370,21 @@ const About = () => {
           className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
             showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
-        >
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
-            alt="Scroll to top"
-            className="w-6 h-6"
-          />
+          >
+            <ArrowUp className="h-6 w-6 text-white" />
         </button>
+
+        <a
+          href="https://wa.me/918101287339?text=Hello%20Purple%20Bean%2C%20I%27m%20interested%20in%20your%20products."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with us on WhatsApp"
+          title="Chat with us on WhatsApp"
+          className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-200 flex items-center justify-center"
+        >
+          <MessageCircle className="h-6 w-6 text-white" />
+        </a>
+        
       </section>
     </motion.div>
   );

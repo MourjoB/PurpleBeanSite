@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { ArrowUp, MessageCircle, Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { sendContactEmail } from '../utils/emailService';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const Contact = () => {
 
@@ -14,6 +15,13 @@ const Contact = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"30min"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
 
   const [formData, setFormData] = useState({
     name: '',
@@ -124,7 +132,7 @@ This message was sent from the Purple Bean Agro contact form.`
     document.body.removeChild(link);
   };
 
-  // ✅ Handle Schedule a Call
+
   const handleScheduleCall = () => {
     const subject = encodeURIComponent('Schedule a Call - Purple Bean Agro');
     const body = encodeURIComponent(
@@ -134,12 +142,17 @@ This message was sent from the Purple Bean Agro contact form.`
     window.location.href = mailtoLink;
   };
 
+  const handleScheduleCallOne = () => {
+    window.open("https://cal.com/purple-bean-agro-industries-pvt-ltd-wnsgkh/30min", "_blank");
+  };
+
+
   const contactInfo = [
     {
       icon: Phone,
       title: 'Phone',
       details: ['+91-8101287339', '+91-81649460527'],
-      description: 'Mon-Fri from 10am to 10pm IST',
+      description: 'Mon-Sun from 10am to 10pm IST',
     },
     {
       icon: Mail,
@@ -156,7 +169,7 @@ This message was sent from the Purple Bean Agro contact form.`
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 10:00am - 10:00pm', 'Saturday: 10:00am - 4:00pm'],
+      details: ['Monday - Sunday: 10:00am - 10:00pm'],
       description: 'Indian Standard Time',
     },
   ];
@@ -316,6 +329,15 @@ This message was sent from the Purple Bean Agro contact form.`
                 Schedule Email
               </motion.button>
               <motion.button
+                onClick={handleScheduleCallOne}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100"
+              >
+                Schedule Call
+              </motion.button>
+
+              <motion.button
                 onClick={handleDownloadCatalogue}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -326,18 +348,26 @@ This message was sent from the Purple Bean Agro contact form.`
             </div>
           </motion.div>
         </div>
-          <button
+        <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
             showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
-        >
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/ui-basic-28/32/UI_App_Mobile_Interface_Website_Design_Upload_copy-512.png"
-            alt="Scroll to top"
-            className="w-6 h-6"
-          />
+          >
+            <ArrowUp className="h-6 w-6 text-white" />
         </button>
+
+        <a
+          href="https://wa.me/918101287339?text=Hello%20Purple%20Bean%2C%20I%27m%20interested%20in%20your%20products."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with us on WhatsApp"
+          title="Chat with us on WhatsApp"
+          className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-200 flex items-center justify-center"
+        >
+          <MessageCircle className="h-6 w-6 text-white" />
+        </a>
+        
       </section>
     </motion.div>
   );

@@ -42,50 +42,50 @@ export const products = [
   //   }
   // },
 
-  // {
-  //   id: 1,
-  //   name: 'Cafe Latte',
-  //   category: 'Flavoured Coffee',
-  //   description: 'Smooth and creamy latte blend for a classic café experience',
-  //   detailedDescription: 'Our Cafe Latte blend features a perfect mix of rich Arabica coffee and creamy flavor for that timeless café taste. Ideal for cafés, restaurants, and instant beverage solutions, it delivers barista-style flavor in every cup.',
-  //   image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
-  //   features: ['100% Arabica Beans', 'Creamy Milk Blend', 'Medium Roast', 'Bulk Packaging Available'],
-  //   rating: 4.8,
-  //   price: 'From ₹450/kg',
-  //   specifications: {
-  //     'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
-  //     'Flavor Profile': 'Creamy, Smooth, Rich',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '12 months'
-  //   }
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Butterscotch Flavoured Coffee',
-  //   category: 'Flavoured Coffee',
-  //   description: 'A rich, buttery coffee infused with sweet butterscotch flavor',
-  //   detailedDescription: 'This Butterscotch Flavoured Coffee offers a luscious combination of rich coffee and sweet, buttery butterscotch flavor. Perfect for indulgent coffee breaks and dessert-inspired menus.',
-  //   image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
-  //   features: ['100% Arabica Beans', 'Natural Butterscotch Flavor', 'Medium Roast', 'Bulk Packaging Available'],
-  //   rating: 4.9,
-  //   price: 'From ₹450/kg',
-  //   specifications: {
-  //     'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
-  //     'Flavor Profile': 'Butterscotch, Sweet, Buttery',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '12 months'
-  //   }
-  // },
+  {
+    id: 1,
+    name: 'Cafe Latte',
+    category: 'Flavoured Coffee',
+    description: 'Smooth and creamy latte blend for a classic café experience',
+    detailedDescription: 'Our Cafe Latte blend features a perfect mix of rich Arabica coffee and creamy flavor for that timeless café taste. Ideal for cafés, restaurants, and instant beverage solutions, it delivers barista-style flavor in every cup.',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
+    features: ['100% Arabica Beans', 'Creamy Milk Blend', 'Medium Roast', 'Bulk Packaging Available'],
+    rating: 4.8,
+    price: 'Request Price',
+    specifications: {
+      'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
+      'Flavor Profile': 'Creamy, Smooth, Rich',
+      'Packaging': 'CUSTOM',
+      'Shelf Life': '12 months'
+    }
+  },
+  {
+    id: 2,
+    name: 'Butterscotch Flavoured Coffee',
+    category: 'Flavoured Coffee',
+    description: 'A rich, buttery coffee infused with sweet butterscotch flavor',
+    detailedDescription: 'This Butterscotch Flavoured Coffee offers a luscious combination of rich coffee and sweet, buttery butterscotch flavor. Perfect for indulgent coffee breaks and dessert-inspired menus.',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
+    features: ['100% Arabica Beans', 'Natural Butterscotch Flavor', 'Medium Roast', 'Bulk Packaging Available'],
+    rating: 4.9,
+    price: 'Request Price',
+    specifications: {
+      'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
+      'Flavor Profile': 'Butterscotch, Sweet, Buttery',
+      'Packaging': 'CUSTOM',
+      'Shelf Life': '12 months'
+    }
+  },
   {
     id: 3,
     name: 'Peppermint Flavoured Coffee',
     category: 'Flavoured Coffee',
     description: 'Refreshing peppermint-infused coffee with a cooling finish',
     detailedDescription: 'Our Peppermint Flavoured Coffee delivers a refreshing minty twist to your daily brew. Crafted with premium Arabica beans and natural peppermint, it’s a bold and invigorating experience.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Natural Peppermint Flavor', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.7,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Minty, Refreshing, Bold',
@@ -99,10 +99,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Dessert-inspired coffee with strawberry and creamy cheesecake notes',
     detailedDescription: 'Enjoy a decadent cup with our Strawberry Cheesecake Coffee. This unique blend combines the fruity sweetness of strawberries with the rich taste of cheesecake for a dessert-like coffee treat.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Strawberry Cheesecake Flavor', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.9,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Fruity, Creamy, Dessert-Inspired',
@@ -116,10 +116,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'A bold coffee with the essence of vodka — completely non-alcoholic',
     detailedDescription: 'Our Vodka Flavoured Coffee gives a unique and bold taste of vodka without alcohol. A daring and elegant choice for those who enjoy adventurous flavor profiles in their coffee.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Vodka-Inspired Flavor', 'Non-Alcoholic', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Vodka-Inspired, Smooth, Bold',
@@ -133,10 +133,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Non-alcoholic rum-flavored coffee with deep caramel notes',
     detailedDescription: 'Enjoy the exotic richness of rum in our Non-Alcoholic Rum Flavoured Coffee. This blend delivers warm, sweet, and spiced flavors perfect for indulgent sipping without any alcohol.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Rum Flavor (Non-Alcoholic)', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Caramel, Spiced, Rum-Inspired',
@@ -150,10 +150,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Elegant brandy-flavored coffee without alcohol',
     detailedDescription: 'Brandy Flavoured Coffee offers a refined and mature flavor, reminiscent of aged brandy but entirely alcohol-free. Ideal for premium hospitality environments and connoisseurs.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Brandy Flavor (Non-Alcoholic)', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.9,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Warm, Aged, Brandy-Inspired',
@@ -167,10 +167,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Unique coffee with a hint of beer-inspired taste — zero alcohol',
     detailedDescription: 'This Beer Flavoured Coffee is a one-of-a-kind blend, offering subtle notes of hops and malt, bringing a craft beer essence to your cup — all without alcohol. Great for novelty cafés and adventurous menus.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['100% Arabica Beans', 'Beer-Inspired Flavor', 'Non-Alcoholic', 'Bulk Packaging Available'],
     rating: 4.7,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Hoppy, Malty, Beer-Inspired',
@@ -184,10 +184,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Instant cold coffee premix with a rich creamy taste',
     detailedDescription: 'Our Cold Coffee Premix is a quick and delicious solution for refreshing beverages. Perfectly balanced with premium coffee and milk solids, this premix delivers the classic cold coffee taste instantly.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Instant Ready Mix', 'Creamy Texture', 'No Brewing Required', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Cold, Creamy, Rich',
@@ -201,10 +201,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Smooth vanilla coffee blend for a rich, aromatic experience',
     detailedDescription: 'Vanilla Flavoured Coffee blends the sweetness of vanilla with robust coffee to create a soothing and delightful beverage. Ideal for dessert menus, cafés, and vending machines.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Smooth Vanilla Flavor', 'Aromatic Blend', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.9,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Sweet, Vanilla, Smooth',
@@ -218,10 +218,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Nutty hazelnut-flavored coffee for a gourmet brew',
     detailedDescription: 'Hazelnut Coffee offers a creamy, nutty flavor paired with high-quality coffee. It’s a favorite among gourmet coffee lovers and makes an excellent option for café menus.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Hazelnut Essence', 'Rich Body', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Nutty, Creamy, Gourmet',
@@ -235,10 +235,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'A delightful fusion of chocolate and premium coffee',
     detailedDescription: 'Our Chocolate Coffee is crafted to bring out a balanced taste of rich cocoa and bold coffee, making it a perfect beverage for dessert lovers and café menus.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Chocolate Infusion', 'Bold Cocoa Taste', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.9,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Chocolatey, Rich, Bold',
@@ -252,10 +252,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Classic cappuccino flavor with creamy foam essence',
     detailedDescription: 'Cappuccino Coffee delivers the signature blend of bold coffee and creamy milk foam. A café-style coffee in an instant form, perfect for vending, cafés, and hotels.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Creamy Cappuccino Flavor', 'Rich Foam Layer', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.7,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Milky, Bold, Smooth',
@@ -269,10 +269,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Chocolate-coffee fusion with a smooth and velvety finish',
     detailedDescription: 'Mocha Coffee is the perfect mix of coffee and cocoa, offering a slightly sweet yet full-bodied beverage. Great for cafes and those who love chocolate undertones in their coffee.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Chocolate & Coffee Blend', 'Smooth Finish', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Mocha, Rich, Chocolatey',
@@ -286,10 +286,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Intensely strong coffee for the boldest palates',
     detailedDescription: 'Our Super Strong Coffee is crafted for those who enjoy intense, highly caffeinated brews. Designed to deliver a powerful kick and deep coffee notes with every sip.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['High Caffeine Content', 'Bold Roast', 'Deep Flavor', 'Bulk Packaging Available'],
     rating: 4.9,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Bold, Robust, Intense',
@@ -303,10 +303,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Smooth caramel-blended coffee with a rich, sweet aroma',
     detailedDescription: 'This Caramel Flavoured Coffee is a sweet indulgence, blending smooth caramel flavor with expertly roasted coffee beans. A great fit for dessert menus or premium vending offerings.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Caramel Essence', 'Smooth Finish', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.8,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Sweet, Creamy, Caramel',
@@ -320,10 +320,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Fruity strawberry notes paired with rich coffee',
     detailedDescription: 'Strawberry Flavoured Coffee brings together juicy strawberry flavor with a medium-bodied coffee base, creating a fun and fruity option for cafes and novelty menus.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Strawberry Aroma', 'Fruity Finish', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.7,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Fruity, Sweet, Refreshing',
@@ -337,10 +337,10 @@ export const products = [
     category: 'Flavoured Coffee',
     description: 'Tropical mango infused coffee for an exotic brew',
     detailedDescription: 'Mango Flavoured Coffee offers a refreshing tropical twist to traditional coffee. A creative and exotic beverage perfect for novelty and seasonal café menus.',
-    image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+    image: 'https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg',
     features: ['Mango Essence', 'Tropical Notes', 'Medium Roast', 'Bulk Packaging Available'],
     rating: 4.6,
-    price: 'From ₹450/kg',
+    price: 'Request Price',
     specifications: {
       'Variant': 'Strong Inst. Powder, Extra Strong Inst. Powder',
       'Flavor Profile': 'Tropical, Sweet, Fruity',
@@ -357,14 +357,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Strong and traditional plain tea premix',
     detailedDescription: 'Our Kadak Chai Premix delivers the classic strong flavor loved across India. It’s formulated for quick preparation in vending machines and cafes, offering consistency in every cup.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Strong Flavor', 'Easy Brewing', 'Ideal for Vending', 'Consistent Taste'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -377,14 +377,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Cardamom-flavored aromatic chai premix',
     detailedDescription: 'Elaichi Chai Premix blends the soothing fragrance of cardamom with rich tea to provide a refreshing and aromatic beverage ideal for hospitality and offices.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Cardamom Aroma', '3-in-1 Formula', 'Quick Serve', 'Rich Taste'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Cardamom Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -397,14 +397,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Spicy ginger tea premix for bold flavor lovers',
     detailedDescription: 'Our Adrak Chai Premix is infused with ginger extract to deliver a bold, spicy flavor perfect for invigorating your senses and boosting energy throughout the day.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Ginger Infused', 'Bold Flavor', 'Ready in Seconds', 'Cafe-Grade Quality'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Ginger Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -417,14 +417,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Spiced Indian masala tea premix blend',
     detailedDescription: 'Masala Chai Premix brings together a harmonious mix of Indian spices like clove, cinnamon, and cardamom for a flavorful and energizing tea experience.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Indian Spices', 'Rich Aroma', 'Instant Preparation', 'Spiced Warmth'],
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Masala Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -437,14 +437,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Traditional Gujrati-style spicy masala tea premix',
     detailedDescription: 'Experience the authentic flavors of Gujarat with this regional masala chai premix — a perfect balance of spice and tea for true chai lovers.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Gujrati Spice Blend', 'Instantly Brewable', 'Strong Flavor', 'Regional Taste'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Regional Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -457,14 +457,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Hyderabadi-style spiced chai premix',
     detailedDescription: 'This Hyderabadi Masala Chai Premix offers a deep, spiced flavor profile representative of Hyderabad’s rich culinary heritage, perfect for tea enthusiasts seeking something special.',
-
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',    features: ['Bold Spices', 'Regional Specialty', 'Quick Serve', 'Robust Taste'],
+    image: '/CafePremix.jpg',
+    features: ['Authentic Hyderabadi Spices', 'Strong & Aromatic Flavor', 'Quick 3-in-1 Preparation', 'Ideal for Spiced Tea Lovers'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Masala Flavoring',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -477,14 +477,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Light, sweetened Parsi-style tea premix',
     detailedDescription: 'Our Parsi Chai Premix is crafted to deliver a lighter tea experience with subtle sweetness and a unique taste profile ideal for niche tea cafes and homes.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Subtle Sweetness', 'Unique Flavor', 'Parsi-Style Blend', 'Light Aroma'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -497,14 +497,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Street-style Bombay cutting chai premix',
     detailedDescription: 'This Cutting Chai Premix captures the bold punch of Mumbai’s iconic tea stalls in every cup, with a strong and stimulating tea experience.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Mumbai Street Style', 'Strong Flavor', 'Quick Serve', 'Authentic Experience'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -517,14 +517,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Traditional Puneri Amruttulya style tea premix',
     detailedDescription: 'Our Puneri Amruttulya Chai brings the richness of milk tea served in Pune’s iconic Amruttulya style. It’s a thick, satisfying tea blend made easy for modern preparation.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Milky and Rich', 'Pune Specialty', 'Instant Premix', 'Full-Bodied Flavor'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -537,14 +537,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Jaggery-flavored rich basundi-style tea premix',
     detailedDescription: 'Our Gud Basundi Chai Premix blends the richness of basundi (sweetened milk) with natural jaggery flavor, offering a wholesome and traditional tea experience.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Jaggery Based', 'Basundi Flavor', 'Traditional Taste', 'Easy to Prepare'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Jaggery, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -557,14 +557,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Sweetened basundi-style milk tea premix',
     detailedDescription: 'Sugar Basundi Chai is a rich and sweetened tea premix inspired by the Indian dessert Basundi, offering a creamy indulgent flavor perfect for evening tea times.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Creamy Flavor', 'Sweetened Basundi Notes', 'Instant Brew', 'Traditional Sweet Taste'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -577,14 +577,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Refreshing mint-flavored tea premix',
     detailedDescription: 'Our Pudina Chai Premix brings a refreshing twist to traditional tea with natural mint flavor that soothes the palate and enhances the overall tea-drinking experience.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Mint Infused', 'Cooling Taste', 'Digestive Benefits', 'Quick Brew'],
     rating: 4.2,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Mint Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -597,14 +597,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Premium saffron-infused tea premix',
     detailedDescription: 'Kesar Chai Premix is a luxurious blend infused with the rich aroma and taste of real saffron, delivering a regal tea experience loved in upscale cafes and homes.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Saffron Infused', 'Royal Aroma', 'Premium Blend', 'Instant Preparation'],
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Saffron Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -617,14 +617,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Classic Irani-style thick tea premix',
     detailedDescription: 'Inspired by the iconic Irani cafés, this premix is creamy and strong, offering the authentic thick tea taste loved in Hyderabad and Mumbai tea houses.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Thick & Creamy', 'Authentic Irani Flavor', 'Easy to Serve', 'Retro Café Style'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -637,14 +637,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Chocolate-flavored tea premix',
     detailedDescription: 'Our Chocolate Tea Premix offers a delightful fusion of rich cocoa and strong tea, perfect for customers who enjoy a chocolaty twist in their tea.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Cocoa Infused', 'Unique Taste', 'Dessert-Like Blend', 'Quick Brew'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Cocoa Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -657,14 +657,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Unique paan-flavored tea premix',
     detailedDescription: 'Paan Tea Premix blends the traditional flavor of betel leaves (paan) with tea to create a refreshing and novel beverage experience ideal for experimentation and niche markets.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Paan Flavored', 'Refreshing & Bold', 'Creative Fusion', 'Easy Preparation'],
     rating: 4.2,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Paan Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -676,14 +676,14 @@ export const products = [
     subcategory: 'Tea Premix',
     subSubcategory: 'Cafe Premix',
     description: 'Rose gulkand-infused paan chai premix',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',    detailedDescription: 'A royal fusion of rose petal preserve (gulkand) and paan flavors, this Gulkand Paan Chai Premix brings a soothing floral aroma and exotic taste to your tea menu.',
+    image: '/CafePremix.jpg',
     features: ['Gulkand Fusion', 'Floral Aroma', 'Specialty Tea', 'Instant Serve'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Gulkand Paan Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -696,14 +696,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Floral rose-flavored tea premix',
     detailedDescription: 'Rose Tea Premix is delicately infused with natural rose flavor, providing a soothing and fragrant cup perfect for unwinding and relaxing moments.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Natural Rose Essence', 'Fragrant & Light', 'Floral Taste', 'Easy to Brew'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Rose Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -716,14 +716,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Rum-flavored non-alcoholic tea premix',
     detailedDescription: 'Our Rum Tea Premix captures the essence of classic rum flavor in a non-alcoholic tea, delivering a warm and indulgent drink for sophisticated palates.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Non-Alcoholic Rum Flavor', 'Warm Taste', 'Elegant Profile', 'Fast Brewing'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Rum Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -736,14 +736,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Traditional jaggery-based chai premix',
     detailedDescription: 'Gud Chai brings the wholesome sweetness of jaggery to your cup. A comforting tea premix that offers a traditional taste with a healthful twist.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Jaggery Sweetened', 'Natural Ingredients', 'Rich Flavor', 'Ready to Use'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Jaggery, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -756,14 +756,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Sweet caramel flavored tea premix',
     detailedDescription: 'Caramel Tea offers a luxurious blend of sweet caramel essence with smooth tea, perfect for cafes and lounges.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Caramel Infused', 'Creamy Texture', 'Easy Brewing', 'Delightfully Sweet'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Caramel, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -776,14 +776,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Smooth butterscotch flavored tea premix',
     detailedDescription: 'Butterscotch Tea is a creamy and buttery tea variant, offering an indulgent twist to your regular tea experience.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Buttery Sweetness', 'Rich Aroma', 'Instant Preparation', 'Unique Flavor'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Butterscotch, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -796,14 +796,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Soothing vanilla flavored tea premix',
     detailedDescription: 'Vanilla Tea delivers a mellow and comforting flavor, crafted for those who enjoy subtle sweet notes in their brew.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Mild Vanilla Notes', 'Aromatic Blend', 'Quick Brewing', 'Elegant Taste'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Vanilla, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -816,14 +816,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Herbal Tulsi infused tea premix',
     detailedDescription: 'Tulsi Tea is infused with holy basil for a rejuvenating and immunity-boosting tea experience, perfect for health-conscious consumers.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Immunity Booster', 'Herbal Flavor', 'Natural Tulsi Extract', 'Quick Preparation'],
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Tulsi Extract, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -836,14 +836,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Refreshing lemon tea premix without milk',
     detailedDescription: 'Lemon Tea (No Milk) offers a tangy and invigorating tea option, perfect for detox routines and summer refreshments.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['No Milk', 'Tangy Lemon Taste', 'Detox Friendly', 'Quick Brew'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Lemon Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -856,14 +856,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Bold black tea premix without milk',
     detailedDescription: 'Black Tea (No Milk) is a strong and pure tea variant, appreciated by tea lovers who enjoy robust flavors and minimal ingredients.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['No Milk', 'Bold Flavor', 'Simple Ingredients', 'Quick Serve'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -876,14 +876,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Spicy masala tea premix without milk',
     detailedDescription: 'Masala Black Tea (No Milk) delivers the rich taste of Indian spices blended into robust black tea — all without milk.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Spiced Blend', 'No Milk', 'Authentic Masala', 'Instant Brew'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Masala Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -896,14 +896,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Flavored tea premix with whiskey essence',
     detailedDescription: 'Whiskey Tea offers a unique and sophisticated tea experience with the aroma and taste of whiskey — all non-alcoholic.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Non-Alcoholic', 'Bold Taste', 'Whiskey Aroma', 'Easy Preparation'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Whiskey Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -916,14 +916,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Vodka flavored tea premix for bold sips',
     detailedDescription: 'Vodka Tea brings a playful and bold twist to your tea break with its signature vodka flavor profile — alcohol-free.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Vodka Essence', 'Non-Alcoholic', 'Fun & Flavorful', 'Quick Prep'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Vodka Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -936,14 +936,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Brandy inspired flavored tea premix',
     detailedDescription: 'Brandy Tea is a cozy blend with the warm notes of brandy flavor, great for creating a premium tea experience — without any alcohol.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Brandy Notes', 'Warm Flavor', 'No Alcohol', 'Cafe Ready'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Brandy Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -956,14 +956,14 @@ export const products = [
     subSubcategory: 'Cafe Premix',
     description: 'Unique beer-flavored tea premix',
     detailedDescription: 'Beer Tea is a one-of-a-kind tea offering that delivers the nostalgic flavor of beer in a non-alcoholic, cafe-friendly tea format.',
-    image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
+    image: '/CafePremix.jpg',
     features: ['Beer Inspired', 'Non-Alcoholic', 'Refreshing Profile', 'Quick to Serve'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Beer Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '10g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -979,11 +979,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Strong Flavor', 'Easy Brewing', 'Ideal for Vending', 'Consistent Taste'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -999,11 +999,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Cardamom Aroma', '3-in-1 Formula', 'Quick Serve', 'Rich Taste'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Cardamom Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1019,11 +1019,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Ginger Infused', 'Bold Flavor', 'Ready in Seconds', 'Cafe-Grade Quality'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Ginger Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1039,11 +1039,11 @@ export const products = [
     features: ['Indian Spices', 'Rich Aroma', 'Instant Preparation', 'Spiced Warmth'],
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Masala Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1059,11 +1059,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Gujrati Spice Blend', 'Instantly Brewable', 'Strong Flavor', 'Regional Taste'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Regional Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1079,11 +1079,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Bold Spices', 'Regional Specialty', 'Quick Serve', 'Robust Taste'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Masala Flavoring',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1098,11 +1098,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',    detailedDescription: 'Our Parsi Chai Premix is crafted to deliver a lighter tea experience with subtle sweetness and a unique taste profile ideal for niche tea cafes and homes.',
     features: ['Subtle Sweetness', 'Unique Flavor', 'Parsi-Style Blend', 'Light Aroma'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1118,11 +1118,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Mumbai Street Style', 'Strong Flavor', 'Quick Serve', 'Authentic Experience'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1137,11 +1137,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',    detailedDescription: 'Our Puneri Amruttulya Chai brings the richness of milk tea served in Pune’s iconic Amruttulya style. It’s a thick, satisfying tea blend made easy for modern preparation.',
     features: ['Milky and Rich', 'Pune Specialty', 'Instant Premix', 'Full-Bodied Flavor'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1157,11 +1157,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',    
     features: ['Jaggery Based', 'Basundi Flavor', 'Traditional Taste', 'Easy to Prepare'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Jaggery, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1177,11 +1177,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Creamy Flavor', 'Sweetened Basundi Notes', 'Instant Brew', 'Traditional Sweet Taste'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1197,11 +1197,11 @@ export const products = [
     detailedDescription: 'Our Pudina Chai Premix brings a refreshing twist to traditional tea with natural mint flavor that soothes the palate and enhances the overall tea-drinking experience.',
     features: ['Mint Infused', 'Cooling Taste', 'Digestive Benefits', 'Quick Brew'],
     rating: 4.2,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Mint Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1217,11 +1217,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Saffron Infused', 'Royal Aroma', 'Premium Blend', 'Instant Preparation'],
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Saffron Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1237,11 +1237,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Thick & Creamy', 'Authentic Irani Flavor', 'Easy to Serve', 'Retro Café Style'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1257,11 +1257,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Cocoa Infused', 'Unique Taste', 'Dessert-Like Blend', 'Quick Brew'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Cocoa Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1276,11 +1276,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',    detailedDescription: 'Paan Tea Premix blends the traditional flavor of betel leaves (paan) with tea to create a refreshing and novel beverage experience ideal for experimentation and niche markets.',
     features: ['Paan Flavored', 'Refreshing & Bold', 'Creative Fusion', 'Easy Preparation'],
     rating: 4.2,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Paan Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1295,11 +1295,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Gulkand Fusion', 'Floral Aroma', 'Specialty Tea', 'Instant Serve'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Gulkand Paan Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1314,11 +1314,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',    detailedDescription: 'Rose Tea Premix is delicately infused with natural rose flavor, providing a soothing and fragrant cup perfect for unwinding and relaxing moments.',
     features: ['Natural Rose Essence', 'Fragrant & Light', 'Floral Taste', 'Easy to Brew'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Rose Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1334,11 +1334,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Non-Alcoholic Rum Flavor', 'Warm Taste', 'Elegant Profile', 'Fast Brewing'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Creamer, Rum Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1354,11 +1354,11 @@ export const products = [
     detailedDescription: 'Gud Chai brings the wholesome sweetness of jaggery to your cup. A comforting tea premix that offers a traditional taste with a healthful twist.',
     features: ['Jaggery Sweetened', 'Natural Ingredients', 'Rich Flavor', 'Ready to Use'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Jaggery, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1374,11 +1374,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Caramel Infused', 'Creamy Texture', 'Easy Brewing', 'Delightfully Sweet'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Caramel, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1394,11 +1394,11 @@ export const products = [
     detailedDescription: 'Butterscotch Tea is a creamy and buttery tea variant, offering an indulgent twist to your regular tea experience.',
     features: ['Buttery Sweetness', 'Rich Aroma', 'Instant Preparation', 'Unique Flavor'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Butterscotch, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1414,11 +1414,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Mild Vanilla Notes', 'Aromatic Blend', 'Quick Brewing', 'Elegant Taste'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Vanilla, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1434,11 +1434,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Immunity Booster', 'Herbal Flavor', 'Natural Tulsi Extract', 'Quick Preparation'],
     rating: 4.8,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Tulsi Extract, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1454,11 +1454,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['No Milk', 'Tangy Lemon Taste', 'Detox Friendly', 'Quick Brew'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Lemon Flavor',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1474,11 +1474,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['No Milk', 'Bold Flavor', 'Simple Ingredients', 'Quick Serve'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1494,11 +1494,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Spiced Blend', 'No Milk', 'Authentic Masala', 'Instant Brew'],
     rating: 4.7,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Masala Spices',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1514,11 +1514,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Non-Alcoholic', 'Bold Taste', 'Whiskey Aroma', 'Easy Preparation'],
     rating: 4.5,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Whiskey Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1534,11 +1534,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Vodka Essence', 'Non-Alcoholic', 'Fun & Flavorful', 'Quick Prep'],
     rating: 4.4,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Vodka Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1554,11 +1554,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Brandy Notes', 'Warm Flavor', 'No Alcohol', 'Cafe Ready'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Brandy Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1574,11 +1574,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Beer Inspired', 'Non-Alcoholic', 'Refreshing Profile', 'Quick to Serve'],
     rating: 4.3,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Beer Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1594,11 +1594,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Bold Taste', 'Instant Preparation', 'Strong Brew', 'Bulk Packaging Available'],
     rating: 4.5,
-    price: 'From ₹220/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Brandy Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1614,11 +1614,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Instant Coffee', 'Extra Caffeine Boost', 'Medium-Dark Roast', 'Bulk Supply'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
       'Components': 'Tea, Sugar, Brandy Flavor, Creamer',
       'Preparation': 'Just add hot water',
-      'Serving Size': '15-20g per cup',
+      'Serving Size': '14g in 100ml',
       'Packaging': 'CUSTOM',
       'Shelf Life': '12 months'
     }
@@ -1634,10 +1634,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Premium Elaichi Flavor', 'Rich Aroma', 'Instant Chai', 'Bulk Packs Available'],
     rating: 4.7,
-    price: 'From ₹260/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Fragrant, Sweet, Spicy',
       'Packaging': 'CUSTOM',
+      'Serving Size': '14g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1652,10 +1653,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Strong Ginger Kick', 'Warming Effect', 'Health Boosting', 'Instant Mix'],
     rating: 4.6,
-    price: 'From ₹255/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Spicy, Strong, Zesty',
       'Packaging': 'CUSTOM',
+      'Serving Size': '14g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1671,10 +1673,11 @@ export const products = [
     image: 'https://5.imimg.com/data5/SELLER/Default/2022/10/KM/LT/UO/5215417/shutterstock-210365299-1-500x500.jpeg',
     features: ['Extra Spices', 'Authentic Masala Chai Taste', 'Instant Preparation', 'Bulk Friendly'],
     rating: 4.6,
-    price: 'From ₹265/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Spicy, Warm, Traditional',
       'Packaging': 'CUSTOM',
+      'Serving Size': '14g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1689,10 +1692,11 @@ export const products = [
     image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
     features: ['Bold Taste', 'Instant Preparation', 'Strong Brew', 'Bulk Packaging Available'],
     rating: 4.5,
-    price: 'From ₹220/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Strong, Bold, Traditional',
       'Packaging': 'CUSTOM',
+      'Serving Size': '10g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1707,11 +1711,11 @@ export const products = [
     image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
     features: ['Instant Coffee', 'Extra Caffeine Boost', 'Medium-Dark Roast', 'Bulk Supply'],
     rating: 4.6,
-    price: 'From ₹320/kg',
+    price: 'Request Price',
     specifications: {
-      'Type': 'Coffee Premix',
       'Flavor Profile': 'Strong, Intense, Roasted',
       'Packaging': 'CUSTOM',
+      'Serving Size': '10g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1726,10 +1730,11 @@ export const products = [
     image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
     features: ['Premium Elaichi Flavor', 'Rich Aroma', 'Instant Chai', 'Bulk Packs Available'],
     rating: 4.7,
-    price: 'From ₹260/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Fragrant, Sweet, Spicy',
       'Packaging': 'CUSTOM',
+      'Serving Size': '10g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1744,10 +1749,11 @@ export const products = [
     image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
     features: ['Strong Ginger Kick', 'Warming Effect', 'Health Boosting', 'Instant Mix'],
     rating: 4.6,
-    price: 'From ₹255/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Spicy, Strong, Zesty',
       'Packaging': 'CUSTOM',
+      'Serving Size': '10g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1762,10 +1768,11 @@ export const products = [
     image: 'https://img.freepik.com/free-photo/cup-cappuccino-with-latte-art-cinnamon-sticks-rustic-surface_9975-124635.jpg?semt=ais_hybrid&w=740',
     features: ['Extra Spices', 'Authentic Masala Chai Taste', 'Instant Preparation', 'Bulk Friendly'],
     rating: 4.6,
-    price: 'From ₹265/kg',
+    price: 'Request Price',
     specifications: {
       'Flavor Profile': 'Spicy, Warm, Traditional',
       'Packaging': 'CUSTOM',
+      'Serving Size': '10g in 100ml',
       'Shelf Life': '12 months'
     }
   },
@@ -1780,11 +1787,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Strong Flavor', 'Multipurpose Use', 'Easy Preparation', 'Commercial Grade'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1800,11 +1807,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Hazelnut Aroma', 'Easy Brewing', 'Premium Experience'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Hazelnut Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1820,11 +1827,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Chocolate Blend', 'Comforting Taste', 'For All Seasons'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Cadbury Chocolate Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1840,11 +1847,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Premium Belgian Chocolate', 'Gourmet Style', 'For Hot and Frappe'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Belgian Chocolate Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1860,11 +1867,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Bittersweet Taste', 'Cocoa-Rich Blend', 'Ideal for Cafés'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Dark Chocolate, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1880,11 +1887,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Vanilla Aroma', 'Smooth Blend', 'Multi-Serve Format'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Vanilla Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1900,11 +1907,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Creamy Foam', 'Authentic Cappuccino Flavor', 'Ready Instantly'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1920,11 +1927,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Mild Coffee', 'Smooth Body', 'Milk-Infused Taste'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Milk Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1940,11 +1947,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Spicy-Ginger Flavor', 'Comforting Aroma', 'Versatile Beverage'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Ginger Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1960,11 +1967,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Spiced with Cardamom', 'Café Style Taste', 'Hot or Cold Use'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Cardamom Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -1980,11 +1987,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Sweet Butterscotch Flavor', 'Cafe Style Drink', 'Quick & Convenient'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Butterscotch Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2000,11 +2007,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Minty Fresh', 'Chilled Coffee Delight', 'Hot or Cold Preparation'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Mint Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2020,11 +2027,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Zesty Orange', 'Chocolate Hints', 'Signature Blend'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Chocolate & Orange Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2040,11 +2047,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Dessert-Inspired', 'Fruity & Creamy', 'Unique Flavor'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Strawberry Cheesecake Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2060,11 +2067,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Chocolate + Coffee', 'Smooth & Creamy', 'Fast Preparation'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Cocoa Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2080,11 +2087,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Extra Caffeine', 'Bold Flavor', 'Café Grade Strength'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Strong Coffee Blend, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2100,11 +2107,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Vanilla-Chocolate Fusion', 'Dessert-Inspired', 'Instant Café-Style'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Chocolate & Vanilla Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2120,11 +2127,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Nutty & Chocolatey', 'Rich Gourmet Taste', 'Easy to Prepare'],
   rating: 4.9,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Hazelnut & Cocoa Flavors, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2140,11 +2147,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Sweet & Smooth', 'Perfect for Frappes', 'Customer Favorite'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Caramel Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2160,11 +2167,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Cold Soluble', 'Frappé Ready', 'Rich & Creamy'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Sugar, Creamer',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2180,11 +2187,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Rum Flavor', 'Non-Alcoholic', 'Unique Café Experience'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Rum Flavoring, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2200,11 +2207,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Whiskey Aroma', 'Alcohol-Free', 'Bold & Robust'],
   rating: 4.4,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Whiskey Flavoring, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2220,11 +2227,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Vodka Essence', 'Refreshing Cold Blend', 'Alcohol-Free'],
   rating: 4.3,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Vodka Flavoring, Sugar, Creamer',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2240,11 +2247,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Beer-Like Taste', 'Non-Alcoholic', 'Innovative Drink Option'],
   rating: 4.2,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Beer Flavoring, Sugar, Creamer',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2260,11 +2267,11 @@ export const products = [
   image: 'https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122',
   features: ['Warm Brandy Aroma', 'Smooth Finish', 'Zero Alcohol'],
   rating: 4.4,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Brandy Flavoring, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '10g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2280,11 +2287,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Strong Flavor', 'Multipurpose Use', 'Easy Preparation', 'Commercial Grade'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2300,11 +2307,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Hazelnut Aroma', 'Easy Brewing', 'Premium Experience'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Hazelnut Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2320,11 +2327,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Chocolate Blend', 'Comforting Taste', 'For All Seasons'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Cadbury Chocolate Flavor, Sugar, Creamer',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2340,11 +2347,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Premium Belgian Chocolate', 'Gourmet Style', 'For Hot and Frappe'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Belgian Chocolate Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2360,11 +2367,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Bittersweet Taste', 'Cocoa-Rich Blend', 'Ideal for Cafés'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Dark Chocolate, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2380,11 +2387,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Vanilla Aroma', 'Smooth Blend', 'Multi-Serve Format'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2400,11 +2407,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Creamy Foam', 'Authentic Cappuccino Flavor', 'Ready Instantly'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2420,11 +2427,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Mild Coffee', 'Smooth Body', 'Milk-Infused Taste'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2440,11 +2447,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Spicy-Ginger Flavor', 'Comforting Aroma', 'Versatile Beverage'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2460,11 +2467,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Spiced with Cardamom', 'Café Style Taste', 'Hot or Cold Use'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2480,11 +2487,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Sweet Butterscotch Flavor', 'Cafe Style Drink', 'Quick & Convenient'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2500,11 +2507,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Minty Fresh', 'Chilled Coffee Delight', 'Hot or Cold Preparation'],
   rating: 4.6,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2520,11 +2527,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Zesty Orange', 'Chocolate Hints', 'Signature Blend'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2540,11 +2547,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Dessert-Inspired', 'Fruity & Creamy', 'Unique Flavor'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2560,11 +2567,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Chocolate + Coffee', 'Smooth & Creamy', 'Fast Preparation'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2580,11 +2587,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Extra Caffeine', 'Bold Flavor', 'Café Grade Strength'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2600,11 +2607,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Vanilla-Chocolate Fusion', 'Dessert-Inspired', 'Instant Café-Style'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2620,11 +2627,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Nutty & Chocolatey', 'Rich Gourmet Taste', 'Easy to Prepare'],
   rating: 4.9,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2640,11 +2647,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Sweet & Smooth', 'Perfect for Frappes', 'Customer Favorite'],
   rating: 4.8,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2660,11 +2667,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Cold Soluble', 'Frappé Ready', 'Rich & Creamy'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2680,11 +2687,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Rum Flavor', 'Non-Alcoholic', 'Unique Café Experience'],
   rating: 4.5,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2700,11 +2707,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Whiskey Aroma', 'Alcohol-Free', 'Bold & Robust'],
   rating: 4.4,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2720,11 +2727,11 @@ export const products = [
   image: 'hhttps://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Vodka Essence', 'Refreshing Cold Blend', 'Alcohol-Free'],
   rating: 4.3,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2740,11 +2747,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Beer-Like Taste', 'Non-Alcoholic', 'Innovative Drink Option'],
   rating: 4.2,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2760,11 +2767,11 @@ export const products = [
   image: 'https://twistyindia.com/cdn/shop/files/close-up-coffee-powder-beans.png?v=1716197189&width=1946',
   features: ['Warm Brandy Aroma', 'Smooth Finish', 'Zero Alcohol'],
   rating: 4.4,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Components': 'Coffee, Flavor, Creamer, Sugar',
     'Applications': 'Hot, Cold, Frappe',
-    'Serving Size': '15-20g per cup',
+    'Serving Size': '14g in 100ml',
     'Packaging': 'CUSTOM',
     'Shelf Life': '12 months'
   }
@@ -2779,7 +2786,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Spray Dried',
@@ -2798,7 +2805,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Spray Dried',
@@ -2817,7 +2824,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Spray Dried',
@@ -2836,7 +2843,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Spray Dried',
@@ -2855,7 +2862,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Spray Dried',
@@ -2875,7 +2882,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Extra Strong Blend', 'Spray Dried Process', 'High Solubility', 'Strong Aroma'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Moisture Content': 'Max 5%',
@@ -2896,7 +2903,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Extra Strong Blend', 'Spray Dried Process', 'High Solubility', 'Strong Aroma'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Spray Dried',
@@ -2916,7 +2923,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Extra Strong Blend', 'Spray Dried Process', 'High Solubility', 'Strong Aroma'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Spray Dried',
@@ -2936,7 +2943,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Extra Strong Blend', 'Spray Dried Process', 'High Solubility', 'Strong Aroma'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Spray Dried',
@@ -2957,7 +2964,7 @@ export const products = [
   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
   features: ['Extra Strong Blend', 'Spray Dried Process', 'High Solubility', 'Strong Aroma'],
   rating: 4.8,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Spray Dried',
@@ -2976,7 +2983,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Pure Coffee', 'Fast Solubility', 'Rich Flavor'],
   rating: 4.8,
-  price: 'From ₹440/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Agglomerated',
@@ -2996,7 +3003,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Balanced Strength', 'Quick Dissolve', 'Commercial Grade'],
   rating: 4.7,
-  price: 'From ₹420/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Agglomerated',
@@ -3016,7 +3023,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Rich Body', 'Consistent Granules', 'Traditionally Loved'],
   rating: 4.6,
-  price: 'From ₹400/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Agglomerated',
@@ -3035,7 +3042,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Cost Effective', 'Great Volume', 'Mild Bitterness'],
   rating: 4.5,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Process': 'Agglomerated',
@@ -3054,7 +3061,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['High Strength', 'Pure Coffee', 'Instant Aroma'],
   rating: 4.9,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Agglomerated',
@@ -3073,7 +3080,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Bold Flavor', 'High Strength', 'Premium Granules'],
   rating: 4.8,
-  price: 'From ₹440/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Agglomerated',
@@ -3092,7 +3099,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Classic Taste', 'Full Body', 'HoReCa Grade'],
   rating: 4.7,
-  price: 'From ₹420/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Agglomerated',
@@ -3111,7 +3118,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2022/7/AL/LU/WU/152980179/agglomerated-instant-pure-coffee-powder.jpg',
   features: ['Economical Strength', 'Quick Mix', 'Traditional Blend'],
   rating: 4.6,
-  price: 'From ₹400/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Process': 'Agglomerated',
@@ -3131,7 +3138,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Grade AAA', 'Mild & Complex Flavor', 'Washed/Unwashed Options'],
   rating: 4.8,
-  price: 'From ₹510/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural/Dry',
@@ -3150,7 +3157,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Grade AA', 'Balanced Profile', 'High Demand Export Grade'],
   rating: 4.7,
-  price: 'From ₹490/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural',
@@ -3169,7 +3176,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Grade A', 'Good Roasting Performance', 'Economical Specialty Bean'],
   rating: 4.5,
-  price: 'From ₹470/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural/Sun-Dried',
@@ -3188,7 +3195,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Grade B', 'Soluble Friendly', 'Reliable Supply'],
   rating: 4.3,
-  price: 'From ₹440/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural',
@@ -3207,7 +3214,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Peaberry Grade', 'Rare Bean', 'Bright Cup Profile'],
   rating: 4.9,
-  price: 'From ₹530/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural or Washed',
@@ -3226,7 +3233,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/VL/EO/QQ/46954279/arabica-cherry-a-green-coffee-bean-500x500.jpg',
   features: ['Grade C', 'Budget-Friendly', 'High Availability'],
   rating: 4.2,
-  price: 'From ₹420/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Natural',
@@ -3245,7 +3252,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Grade AAA', 'Highly Uniform Beans', 'Complex Flavor'],
   rating: 4.9,
-  price: 'From ₹530/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Washed',
@@ -3264,7 +3271,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Grade AA', 'Medium Acidity', 'Smooth Profile'],
   rating: 4.8,
-  price: 'From ₹510/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Washed',
@@ -3283,7 +3290,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Grade A', 'Balanced Flavor', 'Ideal for Mid-Roasts'],
   rating: 4.6,
-  price: 'From ₹490/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Processing': 'Washed',
@@ -3302,7 +3309,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Grade B', 'Commercial Use', 'Smooth Base Notes'],
   rating: 4.4,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Washed',
@@ -3321,7 +3328,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Peaberry Grade', 'Bright & Fruity', 'Specialty Single Origin'],
   rating: 4.9,
-  price: 'From ₹550/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Washed',
@@ -3340,7 +3347,7 @@ export const products = [
   image: 'https://cdn-cms.f-static.net/ready_uploads/media/4692756/normal_5e92928ff3244.jpg',
   features: ['Grade C', 'Budget Bean', 'Vending Ready'],
   rating: 4.2,
-  price: 'From ₹430/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Processing': 'Washed',
@@ -3359,7 +3366,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['High Caffeine', 'Strong Body', 'Uniform Size'],
   rating: 4.7,
-  price: 'From ₹265/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3377,7 +3384,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Rich Aroma', 'Good Screen Size', 'Balanced Cup'],
   rating: 4.6,
-  price: 'From ₹255/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3395,7 +3402,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Robust Flavor', 'Perfect for Blends', 'Affordable'],
   rating: 4.5,
-  price: 'From ₹240/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3413,7 +3420,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Economical', 'Strong Kick', 'Bulk Friendly'],
   rating: 4.3,
-  price: 'From ₹225/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3431,7 +3438,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Peaberry Quality', 'Rich & Round Taste', 'Specialty Use'],
   rating: 4.8,
-  price: 'From ₹275/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3449,7 +3456,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/380859936/VU/AT/HK/34750758/coffee-3-500x500.jpg',
   features: ['Low Cost', 'Utility Grade', 'Reprocessing Use'],
   rating: 4.1,
-  price: 'From ₹210/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3467,7 +3474,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Estate Grown', 'High Caffeine', 'Premium Screen Size'],
   rating: 4.8,
-  price: 'From ₹270/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3485,7 +3492,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Consistent Roast', 'Rich Earthy Cup', 'Estate Grade'],
   rating: 4.7,
-  price: 'From ₹260/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3503,7 +3510,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Reliable Cup', 'Good for Blends', 'Estate Cultivated'],
   rating: 4.6,
-  price: 'From ₹245/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3521,7 +3528,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Commercial Grade', 'Strong Flavor', 'Estate Source'],
   rating: 4.4,
-  price: 'From ₹230/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3539,7 +3546,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Peaberry Selection', 'Round Beans', 'Concentrated Flavor'],
   rating: 4.9,
-  price: 'From ₹280/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3557,7 +3564,7 @@ export const products = [
   image: 'https://coffeebeansindo.id/wp-content/uploads/2022/08/Kopi-Robusta-Hijau-Grade-A.png',
   features: ['Low Grade', 'Soluble Coffee Base', 'Affordable'],
   rating: 4.2,
-  price: 'From ₹215/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light',
     'Packaging': 'CUSTOM',
@@ -3575,7 +3582,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Floral Notes', 'Low Acidity', 'Premium Roast'],
   rating: 4.9,
-  price: 'From ₹580/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3593,7 +3600,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Smooth Finish', 'Balanced Body', 'Versatile Use'],
   rating: 4.8,
-  price: 'From ₹560/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3611,7 +3618,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Mild Sweetness', 'Clean Cup', 'All-Rounder'],
   rating: 4.7,
-  price: 'From ₹540/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3629,7 +3636,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Cost Effective', 'Reliable Flavor', 'Blending Ready'],
   rating: 4.5,
-  price: 'From ₹510/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3647,7 +3654,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Peaberry Selection', 'Bright Acidity', 'Specialty Grade'],
   rating: 4.9,
-  price: 'From ₹590/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3665,7 +3672,7 @@ export const products = [
   image: 'https://www.coffee-spirit.maxicoffee.uk/wp-content/uploads/2023/09/coffee-beans-1-600x460.jpg',
   features: ['Low Cost', 'Basic Arabica Profile', 'Bulk Use'],
   rating: 4.3,
-  price: 'From ₹495/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3683,7 +3690,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Estate Quality', 'Floral-Citrus Notes', 'Clean Finish'],
   rating: 4.9,
-  price: 'From ₹600/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3701,7 +3708,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Balanced Roast', 'Good Body', 'Versatile Cup'],
   rating: 4.8,
-  price: 'From ₹580/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3719,7 +3726,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Café Friendly', 'Medium Acidity', 'Consistent Roast'],
   rating: 4.6,
-  price: 'From ₹555/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3737,7 +3744,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Value Friendly', 'Good Aroma', 'Mild Roast'],
   rating: 4.5,
-  price: 'From ₹520/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3755,7 +3762,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Dense Beans', 'Elite Flavor Profile', 'Peaberry Type'],
   rating: 4.9,
-  price: 'From ₹610/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3773,7 +3780,7 @@ export const products = [
   image: 'https://4.imimg.com/data4/DB/EO/MY-29045197/organic-coffee-bean-500x500.jpg',
   features: ['Budget-Friendly', 'Reprocessing Use', 'Arabica Character'],
   rating: 4.2,
-  price: 'From ₹480/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3791,7 +3798,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['High Caffeine', 'Thick Crema', 'Full Body'],
   rating: 4.8,
-  price: 'From ₹480/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3809,7 +3816,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['Balanced Strength', 'Commercial Grade', 'Good Aroma'],
   rating: 4.6,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3827,7 +3834,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['Strong Roast', 'Good Crema', 'Bulk Friendly'],
   rating: 4.5,
-  price: 'From ₹440/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3845,7 +3852,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['Soft Body', 'Lower Bitterness', 'Blend Friendly'],
   rating: 4.4,
-  price: 'From ₹470/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3863,7 +3870,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['Peaberry Type', 'Punchy Taste', 'Specialty Roast'],
   rating: 4.8,
-  price: 'From ₹495/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3881,7 +3888,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00rgyqJbTnblzt/Low-MOQ-Yunnan-Plantation-Arabica-Coffee-Beans-for-Blending-Espresso-Coffee.webp',
   features: ['Low-Cost', 'Utility Grade', 'Consistent Supply'],
   rating: 4.2,
-  price: 'From ₹420/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3899,7 +3906,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Estate Quality', 'Bold Taste', 'Thick Crema'],
   rating: 4.9,
-  price: 'From ₹490/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3917,7 +3924,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Reliable Roast', 'Full Body', 'Vending Friendly'],
   rating: 4.7,
-  price: 'From ₹470/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3935,7 +3942,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Nutty Finish', 'Strong Base', 'Budget Fit'],
   rating: 4.5,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3953,7 +3960,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Soft Blend', 'Low Bitterness', 'Custom Blending'],
   rating: 4.3,
-  price: 'From ₹470/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3971,7 +3978,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Peaberry Type', 'Aromatic Oils', 'Exotic Roast'],
   rating: 4.9,
-  price: 'From ₹500/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -3989,7 +3996,7 @@ export const products = [
   image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/341655843/LQ/ID/DU/143067805/roasted-coffee-beans-robusta-cherry-aaa-500x500.jpg',
   features: ['Bulk Friendly', 'Low Price', 'Base Material'],
   rating: 4.1,
-  price: 'From ₹430/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Dark,Mild,Light', 
     'Packaging': 'CUSTOM',
@@ -4006,7 +4013,7 @@ export const products = [
   image: 'https://img.taste.com.au/vX-dJiiL/w1200-h630-cfill/taste/2025/05/green-tea-211210-1.jpg',
   features: ['Antioxidant Rich', 'Quick Dissolve', 'Clean Taste', 'Low Caffeine'],
   rating: 4.9,
-  price: 'From ₹340/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Light, Wellness',
     'Appeal': 'Health-conscious, corporate & spa service use',
@@ -4024,7 +4031,7 @@ export const products = [
   image: 'https://img.freepik.com/free-photo/black-coffee-cup_74190-7411.jpg?semt=ais_hybrid&w=740',
   features: ['Quick Brew', 'Deep Color', 'Classic Aroma', 'Perfect for Hot & Cold Use'],
   rating: 4.9,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Regular',
     'Appeal': 'Classic tea lovers & vending partners',
@@ -4042,7 +4049,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Refreshing Flavor', 'Hydrating', 'All-Season Favorite', 'Easy Mix'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Refreshing for summer',
@@ -4060,7 +4067,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Citrus Freshness', 'Instant Energy', 'Chilled Ready'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Zesty and energizing',
@@ -4078,7 +4085,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Fruity Aroma', 'Smooth Taste', 'Cafe-Style Experience'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Youth-friendly and fruity',
@@ -4096,7 +4103,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Sweet Profile', 'Hydrating', 'Great for Parties'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Summer must-have',
@@ -4114,7 +4121,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Tropical Flavor', 'Sweet and Tart', 'Instant Chill'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Tropical escape in a sip',
@@ -4132,7 +4139,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Desi Flavor', 'Tangy & Zingy', 'Youth Favorite'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Local summer vibes',
@@ -4150,7 +4157,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Citrusy Kick', 'Tangy & Refreshing', 'High Energy'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Citrus lovers',
@@ -4168,7 +4175,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Tangy Freshness', 'Vibrant Color', 'Youth Favorite'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Cool & energetic',
@@ -4186,7 +4193,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Berry Sweetness', 'Deep Color', 'Cafe-Style Experience'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Modern & smooth',
@@ -4204,7 +4211,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Fruity & Light', 'Vibrant Pink Hue', 'Refreshing Anytime'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Fun & fruity',
@@ -4222,7 +4229,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Minty Chill', 'Zesty Lime', 'Digestive Friendly'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Fresh & cooling',
@@ -4240,7 +4247,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Dual Citrus', 'Bold Flavors', 'Energizing'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Tangy & energizing',
@@ -4258,7 +4265,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Unique Flavor', 'Zero Alcohol', 'Mocktail Style'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Youth & parties',
@@ -4276,7 +4283,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Mocktail Innovation', 'Smoky & Cool', 'Bold Appeal'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Bold & experimental',
@@ -4294,7 +4301,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Mocktail Vibes', 'Sharp Finish', 'Zero Alcohol'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Trendy & edgy',
@@ -4312,7 +4319,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Warm Notes', 'Mocktail Taste', 'Zero Proof'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Adults & mocktail fans',
@@ -4330,7 +4337,7 @@ export const products = [
   image: 'https://bakingamoment.com/wp-content/uploads/2024/05/IMG_3367-iced-tea.jpg',
   features: ['Instant Mix', 'Lemon Zest', 'Cooling Effect', 'No Brewing Required'],
   rating: 4.8,
-  price: 'From ₹450/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Extra Strong',
     'Appeal': 'Summer refresher for all ages',
@@ -4348,7 +4355,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['Milky Body', 'Street-style Taste', 'Everyday Favorite'],
   rating: 4.7,
-  price: 'From ₹320/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong, Regular',
     'Appeal': 'Daily chai drinkers',
@@ -4366,7 +4373,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['Bold Flavor', 'Spicy Aroma', 'Thick Texture'],
   rating: 4.8,
-  price: 'From ₹330/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Extra Strong',
     'Appeal': 'Spice lovers & Punekars',
@@ -4384,7 +4391,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['No Refined Sugar', 'Warm Notes', 'Ayurvedic Appeal'],
   rating: 4.9,
-  price: 'From ₹340/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Natural Sweetness',
     'Appeal': 'Health-conscious & traditionalists',
@@ -4402,7 +4409,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['Spice-Loaded', 'Warming Effect', 'Authentic Indian Taste'],
   rating: 4.8,
-  price: 'From ₹340/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong & Spicy',
     'Appeal': 'Masala chai lovers',
@@ -4420,7 +4427,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['Royal Aroma', 'Luxury Appeal', 'Special Occasions'],
   rating: 4.9,
-  price: 'From ₹380/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Fragrant',
     'Appeal': 'Festive & premium segment',
@@ -4437,7 +4444,7 @@ export const products = [
   detailedDescription: 'A crowd favorite, our Elaichi Tea is infused with premium cardamom for a soothing, sweet aroma and delightful aftertaste.',
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',  features: ['Soothing Aroma', 'Mild Sweetness', 'Daily Favorite'],
   rating: 4.8,
-  price: 'From ₹340/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Aromatic, Mild',
     'Appeal': 'Everyone from kids to elders',
@@ -4455,7 +4462,7 @@ export const products = [
   image: 'https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-2.jpg',
   features: ['Milky Sweetness', 'Dessert Twist', 'Cafe-Style'],
   rating: 4.9,
-  price: 'From ₹360/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Sweet & Creamy',
     'Appeal': 'Dessert lovers & cafés',
@@ -5017,7 +5024,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Thick & Spiced', 'Cafe-Style', 'Creamy Finish'],
   rating: 4.9,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Consumer Appeal': 'Spiced tea fans & café lovers',
@@ -5035,7 +5042,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Milky & Sweet', 'Dessert Profile', 'Gujarati Inspired'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Rich',
     'Consumer Appeal': 'Dessert-style tea drinkers',
@@ -5053,7 +5060,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Mocktail Inspired', 'Non-Alcoholic', 'Party-Friendly'],
   rating: 4.7,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild',
     'Consumer Appeal': 'Youth & experimental drinkers',
@@ -5071,7 +5078,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Bold Edge', 'Zero Proof', 'Premium Mocktail Base'],
   rating: 4.7,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Strong',
     'Consumer Appeal': 'Mocktail lovers',
@@ -5089,7 +5096,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Smoky Finish', 'Zero Alcohol', 'Evening Favorite'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild',
     'Consumer Appeal': 'Grown-up mocktail market',
@@ -5107,7 +5114,7 @@ export const products = [
   image: 'https://t3.ftcdn.net/jpg/01/06/14/76/360_F_106147605_xmXfzxpraUtLQZkwTYWhjIJc0dkBkN8Y.jpg',
   features: ['Warm Spice', 'Mocktail Feel', 'Comforting'],
   rating: 4.8,
-  price: 'From ₹460/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Mild, Spiced',
     'Consumer Appeal': 'Novelty seekers & winter sippers',
@@ -5124,7 +5131,7 @@ export const products = [
   image: 'https://image.made-in-china.com/2f0j00HFraogOCAlum/Fat-Filled-Milk-Powder-Dry-Milk-Powder.webp',
   features: ['Lactose-Free', 'High Solubility', 'Smooth Mouthfeel'],
   rating: 4.7,
-  price: 'From ₹200/kg',
+  price: 'Request Price',
   specifications: {
     'Applications': 'Premix, Vending',
     'Packaging': 'CUSTOM',
@@ -5140,7 +5147,7 @@ export const products = [
   image: 'https://img.freepik.com/premium-photo/abstract-white-powder-steel-spoon_488220-61362.jpg',
   features: ['Rich Creaminess', 'Instant Mix', 'Long Shelf Life'],
   rating: 4.8,
-  price: 'From ₹240/kg',
+  price: 'Request Price',
   specifications: {
     'Applications': 'Vending, Premix, Daily Use',
     'Packaging': 'CUSTOM',
@@ -5156,7 +5163,7 @@ export const products = [
   image: 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147582967/images/6af2afc-d628-5aac-fece-2e33af77a4e2_chicory-root-coffee-06.jpg',
   features: ['Natural Additive', 'Dark Roast', 'Caffeine-Free'],
   rating: 4.6,
-  price: 'From ₹180/kg',
+  price: 'Request Price',
   specifications: {
     'Applications': 'Coffee Blending, Health Drinks',
     'Packaging': 'CUSTOM',
@@ -5172,7 +5179,7 @@ export const products = [
   image: 'https://goodfood.ae/cdn/shop/files/JAGGERYPOWDER.jpg?v=1690434248',
   features: ['Unrefined', 'Iron Rich', 'Healthy Sugar Substitute'],
   rating: 4.8,
-  price: 'From ₹160/kg',
+  price: 'Request Price',
   specifications: {
     'Applications': 'Tea, Coffee, Indian Cuisine',
     'Packaging': 'CUSTOM',
@@ -5189,7 +5196,7 @@ export const products = [
   image: 'https://kopikita.id/wp-content/uploads/2023/04/kopi-freeze-dried.jpg',
   features: ['100% Arabica', 'Premium Aroma', 'Soluble & Clean Cup'],
   rating: 4.9,
-  price: 'From ₹880/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Single Origin Arabica',
     'Process': 'Freeze Dried',
@@ -5208,7 +5215,7 @@ export const products = [
   image: 'https://kopikita.id/wp-content/uploads/2023/04/kopi-freeze-dried.jpg',
   features: ['100% Robusta', 'High Caffeine', 'Strong & Bold'],
   rating: 4.8,
-  price: 'From ₹780/kg',
+  price: 'Request Price',
   specifications: {
     'Variant': 'Single Origin Robusta',
     'Process': 'Freeze Dried',
@@ -5217,223 +5224,6 @@ export const products = [
     'Shelf Life': '24 months'
   }
 },
-
-
-  
-
-  // {
-  //   id: 2,
-  //   name: 'Spray Dried Coffee',
-  //   category: 'Plain Coffee',
-  //   subcategory: 'Spray Dried',
-  //   description: 'High-quality spray dried instant coffee powder',
-  //   detailedDescription: 'Our Spray Dried Coffee is produced using advanced spray drying technology to preserve the natural coffee aroma and flavor. Perfect for instant coffee preparations and industrial applications.',
-  //   image: 'https://www.blueberryagro.com/wp-content/uploads/2020/09/ratio6x5-600.jpg',
-  //   features: ['Instant Solubility', 'Rich Aroma', 'Long Shelf Life', 'Industrial Grade'],
-  //   rating: 4.8,
-  //   price: 'From ₹380/kg',
-  //   specifications: {
-  //     'Process': 'Spray Dried',
-  //     'Solubility': '99.5%',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '12 months'
-  //   }
-  // },
-
-  // {
-  //   id: 3,
-  //   name: 'Agglomerated Coffee',
-  //   category: 'Plain Coffee',
-  //   subcategory: 'Agglomerated',
-  //   description: 'Premium agglomerated instant coffee with enhanced solubility',
-  //   detailedDescription: 'Our Agglomerated Coffee undergoes a special agglomeration process that creates larger, more porous granules for superior solubility and flavor release. Ideal for premium instant coffee products.',
-  //   image: 'https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg',
-  //   features: ['Enhanced Solubility', 'Premium Quality', 'Uniform Granules', 'Superior Flavor'],
-  //   rating: 4.7,
-  //   price: 'From ₹420/kg',
-  //   specifications: {
-  //     'Variant': 'Regular',
-  //     'Process': 'Agglomerated',
-  //     'Packaging': 'CUSTOM',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 4,
-  //   name: 'Freeze Dried Coffee',
-  //   category: 'Plain Coffee',
-  //   subcategory: 'Freeze Dried',
-  //   description: 'Premium freeze-dried coffee with exceptional flavor retention',
-  //   detailedDescription: 'Our Freeze Dried Coffee is processed using advanced freeze-drying technology that preserves the original coffee flavor and aroma better than any other method. This premium product offers the closest taste to freshly brewed coffee.',
-  //   image: 'https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg',
-  //   features: ['Superior Flavor', 'Freeze Dried Process', 'Premium Quality', 'Excellent Aroma'],
-  //   rating: 4.9,
-  //   price: 'From ₹650/kg',
-  //   specifications: {
-  //     'Process': 'Freeze Dried',
-  //     'Moisture Content': 'Max 4%',
-  //     'Flavor Retention': '95%+',
-  //     'Packaging': '10kg, 25kg',
-  //     'Shelf Life': '36 months'
-  //   }
-  // },
-  // {
-  //   id: 5,
-  //   name: 'Tea Cafe Premix',
-  //   category: 'Premix',
-  //   subcategory: 'Tea Premix',
-  //   subSubcategory: 'Cafe Premix',
-  //   description: '3-in-1 tea premix for cafes and restaurants',
-  //   detailedDescription: 'Our Tea Cafe Premix is a perfectly balanced blend of tea, sugar, and creamer designed specifically for commercial use. Just add hot water for a consistent, delicious cup every time.',
-  //   image: 'https://images.pexels.com/photos/4021769/pexels-photo-4021769.jpeg',
-  //   features: ['3-in-1 Formula', 'Consistent Quality', 'Easy Preparation', 'Commercial Grade'],
-  //   rating: 4.6,
-  //   price: 'From ₹320/kg',
-  //   specifications: {
-  //     'Components': 'Tea, Sugar, Creamer',
-  //     'Preparation': 'Just add hot water',
-  //     'Serving Size': '15-20g per cup',
-  //     'Packaging': '1kg, 25kg',
-  //     'Shelf Life': '12 months'
-  //   }
-  // },
-  // {
-  //   id: 6,
-  //   name: 'Coffee Vending Machine Premix',
-  //   category: 'Premix',
-  //   subcategory: 'Coffee Premix',
-  //   subSubcategory: 'Vending Machine Premix',
-  //   description: 'Specially formulated coffee premix for vending machines',
-  //   detailedDescription: 'Our Coffee Vending Machine Premix is engineered for optimal performance in automatic vending machines. It dissolves completely and consistently, ensuring every cup meets quality standards.',
-  //   image: 'https://images.pexels.com/photos/4021769/pexels-photo-4021769.jpeg',
-  //   features: ['Vending Optimized', 'Complete Dissolution', 'Consistent Taste', 'Machine Compatible'],
-  //   rating: 4.5,
-  //   price: 'From ₹280/kg',
-  //   specifications: {
-  //     'Formulation': 'Vending Machine Specific',
-  //     'Dissolution Time': '< 30 seconds',
-  //     'Particle Size': 'Fine mesh',
-  //     'Packaging': '25kg bags',
-  //     'Shelf Life': '18 months'
-  //   }
-  // },
-  // {
-  //   id: 7,
-  //   name: 'Premium Green Coffee Beans',
-  //   category: 'Coffee Beans',
-  //   subcategory: 'Green Beans',
-  //   description: 'Premium green coffee beans for roasting',
-  //   detailedDescription: 'Sourced from the finest coffee estates, our Premium Green Coffee Beans are perfect for custom roasting. High-quality beans with excellent flavor potential.',
-  //   image: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg',
-  //   features: ['Premium Grade', 'Custom Roasting', 'High Quality', 'Traceable Source'],
-  //   rating: 4.8,
-  //   price: 'From ₹450/kg',
-  //   specifications: {
-  //     'Bean Type': '100% Arabica',
-  //     'Grade': 'AA/AAA',
-  //     'Processing': 'Washed/Natural',
-  //     'Packaging': '60kg jute bags',
-  //     'Shelf Life': '12 months'
-  //   }
-  // },
-  // {
-  //   id: 8,
-  //   name: 'Arabia Cherry Roasted Beans',
-  //   category: 'Coffee Beans',
-  //   subcategory: 'Roasted Beans',
-  //   subSubcategory: 'Arabia Cherry',
-  //   description: 'Premium Arabia Cherry roasted coffee beans',
-  //   detailedDescription: 'Our Arabia Cherry roasted beans offer exceptional flavor with fruity and wine-like characteristics. Perfect for specialty coffee applications.',
-  //   image: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg',
-  //   features: ['Arabia Cherry Variety', 'Fruity Notes', 'Premium Roast', 'Specialty Grade'],
-  //   rating: 4.9,
-  //   price: 'From ₹650/kg',
-  //   specifications: {
-  //     'Bean Type': 'Arabia Cherry',
-  //     'Roast Level': 'Medium',
-  //     'Flavor Profile': 'Fruity, Wine-like',
-  //     'Packaging': '1kg, 5kg bags',
-  //     'Shelf Life': '6 months'
-  //   }
-  // },
-  // {
-  //   id: 9,
-  //   name: 'NDC Milk Powder',
-  //   category: 'NDC',
-  //   description: 'Non-Dairy Creamer powder for coffee applications',
-  //   detailedDescription: 'Our NDC Milk Powder is a high-quality non-dairy creamer specifically formulated for coffee applications. It provides excellent whitening, smooth texture, and enhanced mouthfeel to coffee beverages.',
-  //   image: 'https://images.pexels.com/photos/4117625/pexels-photo-4117625.jpeg',
-  //   features: ['Non-Dairy', 'Excellent Whitening', 'Smooth Texture', 'Coffee Optimized'],
-  //   rating: 4.4,
-  //   price: 'From ₹240/kg',
-  //   specifications: {
-  //     'Type': 'Non-Dairy Creamer',
-  //     'Fat Content': '28-32%',
-  //     'Protein': '2-4%',
-  //     'Packaging': '25kg bags',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 10,
-  //   name: 'Instant Tea Block',
-  //   category: 'Tea',
-  //   subcategory: 'Instant Tea',
-  //   subSubcategory: 'Block',
-  //   description: 'High-quality instant tea in block form',
-  //   detailedDescription: 'Our Instant Tea Block provides rich tea flavor in a convenient block format. Perfect for commercial tea preparations.',
-  //   image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg',
-  //   features: ['Instant Preparation', 'Rich Flavor', 'Block Format', 'Commercial Grade'],
-  //   rating: 4.7,
-  //   price: 'From ₹180/kg',
-  //   specifications: {
-  //     'Form': 'Block',
-  //     'Solubility': 'Instant',
-  //     'Caffeine': '40-50mg per cup',
-  //     'Packaging': '5kg, 20kg blocks',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
-  // {
-  //   id: 11,
-  //   name: 'Amrutuleya Puneri Tea',
-  //   category: 'Tea',
-  //   subcategory: 'Amrutuleya',
-  //   subSubcategory: 'Puneri',
-  //   description: 'Traditional Puneri style Amrutuleya tea blend',
-  //   detailedDescription: 'Our Amrutuleya Puneri Tea is a traditional blend that captures the authentic taste of Pune-style tea. Rich in flavor and aroma.',
-  //   image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg',
-  //   features: ['Traditional Recipe', 'Puneri Style', 'Rich Aroma', 'Authentic Taste'],
-  //   rating: 4.8,
-  //   price: 'From ₹220/kg',
-  //   specifications: {
-  //     'Style': 'Puneri Traditional',
-  //     'Blend': 'Tea with spices',
-  //     'Origin': 'Maharashtra',
-  //     'Packaging': '1kg, 10kg',
-  //     'Shelf Life': '18 months'
-  //   }
-  // },
-  // {
-  //   id: 12,
-  //   name: 'CTC Tea BOP Grade',
-  //   category: 'Tea',
-  //   subcategory: 'CTC Tea',
-  //   subSubcategory: 'BOP',
-  //   description: 'Premium CTC Tea Broken Orange Pekoe grade',
-  //   detailedDescription: 'Our CTC Tea BOP Grade offers superior quality with excellent color and flavor. Perfect for commercial tea service.',
-  //   image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg',
-  //   features: ['BOP Grade', 'Strong Color', 'Rich Flavor', 'Premium Quality'],
-  //   rating: 4.6,
-  //   price: 'From ₹200/kg',
-  //   specifications: {
-  //     'Grade': 'BOP (Broken Orange Pekoe)',
-  //     'Process': 'CTC',
-  //     'Color': 'Strong',
-  //     'Packaging': '20kg boxes',
-  //     'Shelf Life': '24 months'
-  //   }
-  // },
   {
     id: 300,
     name: 'Crystal Coffee',
@@ -5443,7 +5233,7 @@ export const products = [
   image: 'https://kopikita.id/wp-content/uploads/2023/04/kopi-freeze-dried.jpg',
     features: ['Crystal Clear', 'Instant Dissolution', 'Pure Taste', 'Innovative Technology'],
     rating: 4.9,
-    price: 'From ₹580/kg',
+    price: 'Request Price',
     isNew: true,
     specifications: {
       'Process': 'Advanced Crystallization',

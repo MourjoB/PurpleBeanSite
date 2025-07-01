@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo1.png';
 import { Menu, X, Search } from 'lucide-react';
 import { filterItems, products } from '../data.js';
 
-const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
+const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [localSearchTerm, setLocalSearchTerm] = useState(searchTerm || '');
@@ -25,6 +25,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
     setLocalSearchTerm(searchTerm || '');
   }, [searchTerm]);
 
+  // Update search results when local search term changes
   useEffect(() => {
     const results = filterItems(products, localSearchTerm);
     setSearchResults(results);
@@ -41,18 +42,17 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
     const value = e.target.value;
     setLocalSearchTerm(value);
 
+    // Filter products using the filterItems function
+    const results = filterItems(products, value);
+    setSearchResults(results);
+
     if (onSearch) {
-      onSearch(value); // Notify parent to update search results
+      onSearch(value);
     }
 
-    // Navigate to /products when searching
+    // Navigate to products page if there's a search term and not already on products page
     if (value && location.pathname !== '/products') {
       navigate('/products');
-    }
-
-    // Handle case when input is cleared and already on /products
-    if (!value && location.pathname === '/products') {
-      onSearch(''); // Clear product filter
     }
   };
 
@@ -64,12 +64,13 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
   };
 
   const handleNavClick = (path) => {
-    if (onClearSearch) {
-      onClearSearch();
-    }
-    setLocalSearchTerm('');
-    navigate(path);
-  };
+  if (onClearSearch) {
+    onClearSearch(); 
+  }
+  setLocalSearchTerm(''); 
+  navigate(path); 
+};
+
 
   return (
     <motion.nav
@@ -86,7 +87,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
-              className="bg-white p-1 rounded-full"
+              className=" p-1 rounded-full"
             >
               <img src={logo} alt="Logo" className="h-16 w-19 rounded-full object-cover" />
             </motion.div>
@@ -103,8 +104,8 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
                 onClick={() => handleNavClick(item.path)}
                 className={`relative px-3 py-2 text-xl font-medium transition-colors mb-4 duration-200 ${
                   location.pathname === item.path
-                    ? scrolled ? 'text-primary-600' : 'text-white'
-                    : scrolled ? 'text-gray-700 hover:text-primary-600' : 'text-white/80 hover:text-white'
+                    ? scrolled ? 'text-primary-600' : 'text-purple-900'
+                    : scrolled ? 'text-gray-600 hover:text-primary-700' : 'text-purple-800 hover:text-purple-700'
                 }`}
               >
                 {item.name}
@@ -117,7 +118,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
               </button>
             ))}
 
-            {/* Search Bar */}
+             {/* Search Bar */}
             <div className="relative mb-4">
               <form onSubmit={handleSearchSubmit}>
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -131,12 +132,12 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
               </form>
             </div>
           </div>
-
+          
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 ${scrolled ? 'text-gray-900' : 'text-white'}`}
+              className={`p-2 ${scrolled ? 'text-gray-900' : 'text-purple-500'}`}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -144,6 +145,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
         </div>
       </div>
 
+      
       {/* Mobile Navigation */}
       <motion.div
         initial={{ opacity: 0, height: 0 }}
@@ -170,6 +172,7 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
               {item.name}
             </button>
           ))}
+
 
           {/* Mobile Search Bar */}
           <div className="pt-4">
