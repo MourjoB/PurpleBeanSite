@@ -45,32 +45,13 @@ const About = () => {
   ];
 
   const timeline = [
-    {
-      // year: '2008',
-      title: 'Company Founded',
-      description: 'Started with a vision to provide premium natural products to businesses worldwide',
-    },
-    {
-      // year: '2012',
-      title: 'Global Expansion',
-      description: 'Expanded operations to serve clients across 20 countries',
-    },
-    {
-      // year: '2016',
-      title: 'Retail Expansion',
-      description: 'Expanded into national and international retail markets, strengthening our global presence and customer reach.',
-    },
-    {
-      // year: '2020',y
-      title: 'Digital Transformation',
-      description: 'Launched advanced digital platforms for better customer experience',
-    },
-    {
-      // year: '2024',
-      title: 'Sustainable Future',
-      description: 'Leading the industry in sustainable and eco-friendly practices',
-    },
-  ];
+  { image: "/factory1.jpg" },
+  { image: "/factory2.jpg" },
+  { image: "/factory3.jpg" },
+  { image: "/factory4.jpg" },
+  { image: "/factory5.jpg" }
+];
+
 
   const team = [
     {
@@ -234,7 +215,8 @@ const About = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20">
+
+     <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -264,16 +246,12 @@ const About = () => {
               className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'} mb-12`}
             >
               <div className={`w-full md:w-6/12 max-w-md ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'} mx-auto md:mx-0`}>
-                <div className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-full break-words">
-                  <div className="text-2xl font-bold text-primary-600 mb-2">
-                    {item.year}
-                  </div>
-                  <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 whitespace-pre-line">
-                    {item.description}
-                  </p>
+                <div className="rounded-2xl shadow-lg w-full max-w-full overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={`Timeline event`}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
 
@@ -284,7 +262,9 @@ const About = () => {
         </div>
       </section>
 
+
       {/* Team Section */}
+      {/*
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -336,6 +316,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      *}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800">

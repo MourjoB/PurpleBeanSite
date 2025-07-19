@@ -109,82 +109,72 @@ const Home = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="overflow-hidden">
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-300 via-primary-400 to-primary-500">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg"
-            alt="Coffee Products"
-            className="w-full h-full object-cover mix-blend-overlay opacity-30"
-          />
-        </div>
+      <section className="relative min-h-screen flex items-center justify-end px-4 sm:px-6 lg:px-20">
+  {/* Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/factory3.jpg" // <-- Replace with your actual image filename
+      alt="Coffee Production"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight"
-          >
-            Premium Wholesale 
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
-              Coffee
-            </span>
-          </motion.h1>
+  {/* Right-side Gradient Overlay */}
+  <div className="absolute inset-0 z-10 bg-gradient-to-l from-black/60 via-transparent to-transparent"></div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl md:text-xl text-white/90 mb-10 max-w-3xl mx-auto"
-          >
-            Are you a Cafe Owner, Coffee Wholesaler, Trader, or Restaurant Operator?
-            <br/>
-            If so, we guarantee in providing premium-grade coffee at best prices.
-          </motion.p>
 
-          <br/>
-          <br/>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <Link to="/products">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-150 flex items-center space-x-2 mr-2"
-              >
-                <span>Explore Products</span>
-                <ArrowRight className="h-5 w-5" />
-              </motion.button>
-            </Link>
 
-            <Link to="/contact">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary-700 transition duration-150 ml-2"
-              >
-                Get Contact
-              </motion.button>
-            </Link>
-          </motion.div>
-        </div>
+  {/* Hero Content */}
+  <div className="relative z-20 w-full sm:w-auto max-w-2xl text-center sm:text-right py-24 sm:py-0">
+    <div className="bg-black/60 px-4 py-6 sm:px-10 sm:py-10 rounded-xl backdrop-blur-sm mx-auto sm:mx-0 max-w-lg">
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-6"
+      >
+        Premium{' '}
+        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+          Coffee & Chicory
+        </span>
+        Manufacturer & Exporter
+      </motion.h1>
 
-        <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2"></div>
-          </div>
-        </motion.div>
-      </section>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="text-base sm:text-lg text-white/90 mb-6"
+      >
+        Are you a Export or Importer of Coffee? <br />
+        Maybe a Wholesaler or Trader?<br />
+        We guarantee premium-grade coffee <br/>
+        products at the best prices.
+      </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="flex flex-col sm:flex-row gap-4 sm:justify-end items-center"
+      >
+        <Link to="/products">
+          <button className="bg-white text-primary-700 px-6 py-3 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transition">
+            Explore Products
+          </button>
+        </Link>
+
+        <Link to="/contact">
+          <button className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-primary-700 transition">
+            Get Contact
+          </button>
+        </Link>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
+
 
 
       {/* Stats Section */}
