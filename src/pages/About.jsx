@@ -47,9 +47,9 @@ const About = () => {
   const timeline = [
   { image: "/factory1.jpg" },
   { image: "/factory2.jpg" },
-  { image: "/factory3.jpg" },
+  { image: "/factory5.jpg" },
   { image: "/factory4.jpg" },
-  { image: "/factory5.jpg" }
+  { image: "/factory3.jpg" }
 ];
 
 
