@@ -45,7 +45,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+      display: ['Playfair Display', 'ui-serif', 'Georgia'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.6s ease-out',
