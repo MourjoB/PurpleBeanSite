@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-3xl bg-black/50 backdrop-blur-md p-6 sm:p-10 rounded-xl space-y-5 sm:space-y-6">
+      <div className="relative z-10 max-w-3xl space-y-5 sm:space-y-6">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,26 +30,30 @@ const HeroSection = () => {
         </motion.h1>
 
         {/* Short text for mobile */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-base text-white/90 leading-relaxed sm:hidden"
+          className="sm:hidden bg-black/60 backdrop-blur-sm p-4 rounded-lg max-w-xl"
         >
-          Trusted supplier across 20+ countries. Export-ready blends. Competitive pricing.
-        </motion.p>
+          <p className="text-base text-white/90 leading-relaxed">
+            Trusted supplier across 20+ countries. Export-ready blends. Competitive pricing.
+          </p>
+        </motion.div>
 
         {/* Full text for desktop */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="hidden sm:block text-lg md:text-xl text-white/90 leading-relaxed"
+          className="hidden sm:block bg-black/60 backdrop-blur-sm p-5 rounded-lg max-w-xl"
         >
-          India’s trusted supplier to importers, wholesalers, and private-label brands in 20+ countries.
-          <br />
-          Specialists in instant coffee, chicory, and custom blends — with export-ready packaging & pricing.
-        </motion.p>
+          <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+            India’s trusted supplier to importers, wholesalers, and private-label brands in 20+ countries.
+            <br />
+            Specialists in instant coffee, chicory, and custom blends — with export-ready packaging & pricing.
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
