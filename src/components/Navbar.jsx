@@ -5,7 +5,7 @@ import logo from '../assets/logo1.png';
 import { Menu, X, Search } from 'lucide-react';
 import { filterItems, products } from '../data.js';
 
-const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
+const Navbar = ({ onSearch, searchTerm, onClearSearch }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [localSearchTerm, setLocalSearchTerm] = useState(searchTerm || '');
@@ -25,7 +25,6 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
     setLocalSearchTerm(searchTerm || '');
   }, [searchTerm]);
 
-  // Update search results when local search term changes
   useEffect(() => {
     const results = filterItems(products, localSearchTerm);
     setSearchResults(results);
@@ -41,19 +40,10 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setLocalSearchTerm(value);
-
-    // Filter products using the filterItems function
     const results = filterItems(products, value);
     setSearchResults(results);
-
-    if (onSearch) {
-      onSearch(value);
-    }
-
-    // Navigate to products page if there's a search term and not already on products page
-    if (value && location.pathname !== '/products') {
-      navigate('/products');
-    }
+    if (onSearch) onSearch(value);
+    if (value && location.pathname !== '/products') navigate('/products');
   };
 
   const handleSearchSubmit = (e) => {
@@ -64,80 +54,70 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
   };
 
   const handleNavClick = (path) => {
-  if (onClearSearch) {
-    onClearSearch(); 
-  }
-  setLocalSearchTerm(''); 
-  navigate(path); 
-};
-
+    if (onClearSearch) onClearSearch();
+    setLocalSearchTerm('');
+    navigate(path);
+    setIsOpen(false);
+  };
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 py-1 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-white/90 shadow border-b border-gray-200 backdrop-blur' : 'bg-white/60 backdrop-blur'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-2">
         <div className="flex justify-between items-center h-16">
+          
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
-              className=" p-1 rounded-full"
-            >
-              <img src={logo} alt="Logo" className="h-16 w-19 rounded-full object-cover" />
-            </motion.div>
-            <span className={`font-bold text-xl ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-              Purple Bean Agro
-            </span>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src="/logo.png" alt="Logo" className="h-48 w-30 object-contain" />
+    
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.path)}
-                className={`relative px-3 py-2 text-xl font-medium transition-colors mb-4 duration-200 ${
+                className={`relative px-1 py-1 text-base font-medium transition duration-200 ${
                   location.pathname === item.path
-                    ? scrolled ? 'text-primary-600' : 'text-purple-900'
-                    : scrolled ? 'text-gray-600 hover:text-primary-700' : 'text-purple-800 hover:text-purple-700'
+                    ? 'text-primary-700 underline underline-offset-4'
+                    : 'text-gray-700 hover:text-primary-700'
                 }`}
               >
                 {item.name}
-                {location.pathname === item.path && (
-                  <motion.div
-                    layoutId="activeTab"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
-                  />
-                )}
               </button>
             ))}
 
-             {/* Search Bar */}
-            <div className="relative mb-4">
-              <form onSubmit={handleSearchSubmit}>
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                <input
-                  type="text"
-                  placeholder="Search products..."
-                  value={localSearchTerm}
-                  onChange={handleSearchChange}
-                  className="w-80 pl-10 pr-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white/95 backdrop-blur-sm shadow-sm text-gray-900 placeholder-gray-500"
-                />
-              </form>
-            </div>
+            {/* Search */}
+            <form onSubmit={handleSearchSubmit} className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={localSearchTerm}
+                onChange={handleSearchChange}
+                className="w-64 pl-9 pr-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-primary-500 focus:outline-none text-sm bg-white text-gray-900"
+              />
+            </form>
+
+            {/* CTA */}
+            <Link to="/contact">
+              <button className="bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition ml-2">
+                Get in Touch
+              </button>
+            </Link>
           </div>
-          
-          {/* Mobile menu button */}
+
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 ${scrolled ? 'text-gray-900' : 'text-purple-500'}`}
+              className="text-primary-700 focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -145,52 +125,52 @@ const Navbar = ({ onSearch, searchTerm, onClearSearch}) => {
         </div>
       </div>
 
-      
-      {/* Mobile Navigation */}
-      <motion.div
-        initial={{ opacity: 0, height: 0 }}
-        animate={{
-          opacity: isOpen ? 1 : 0,
-          height: isOpen ? 'auto' : 0,
-        }}
-        className="md:hidden bg-white shadow-lg overflow-hidden"
-      >
-        <div className="px-4 py-4 space-y-2">
-          {navItems.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => {
-                setIsOpen(false);
-                handleNavClick(item.path);
-              }}
-              className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                location.pathname === item.path
-                  ? 'text-primary-600 bg-primary-50'
-                  : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
-              }`}
-            >
-              {item.name}
-            </button>
-          ))}
+      {/* Mobile Drawer */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          className="md:hidden bg-white shadow px-4 pb-4"
+        >
+          <div className="space-y-3 pt-2">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => handleNavClick(item.path)}
+                className={`block w-full text-left text-sm font-medium ${
+                  location.pathname === item.path
+                    ? 'text-primary-700'
+                    : 'text-gray-700 hover:text-primary-700'
+                }`}
+              >
+                {item.name}
+              </button>
+            ))}
 
-
-          {/* Mobile Search Bar */}
-          <div className="pt-4">
-            <form onSubmit={handleSearchSubmit}>
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                <input
-                  type="text"
-                  placeholder="Search products..."
-                  value={localSearchTerm}
-                  onChange={handleSearchChange}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                />
-              </div>
+            {/* Mobile Search */}
+            <form onSubmit={handleSearchSubmit} className="relative pt-2">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={localSearchTerm}
+                onChange={handleSearchChange}
+                className="w-full pl-9 pr-4 py-2 border border-gray-300 rounded-full text-sm focus:ring-2 focus:ring-primary-500"
+              />
             </form>
+
+            {/* CTA */}
+            <Link to="/contact">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="w-full bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 mt-2"
+              >
+                Get in Touch
+              </button>
+            </Link>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      )}
     </motion.nav>
   );
 };
