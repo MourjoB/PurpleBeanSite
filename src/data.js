@@ -75,7 +75,7 @@ export const products = [
   },
   {
   id: 6,
-  name: 'Maltodextrin',
+  name: 'Brown Maltodextrin',
   slug: 'maltodextrin',
   category: 'Maltodextrin',
   description: 'High-quality food-grade maltodextrin powder for use in beverages, foods, and industrial formulations.',
