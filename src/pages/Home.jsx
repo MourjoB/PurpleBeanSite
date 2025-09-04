@@ -27,7 +27,6 @@ const Home = () => {
        <CallToAction />
       <SalesProcess />
       <ProductCategoryPreview />
-      <Footer />
 
       {/* Scroll to top */}
       <button
