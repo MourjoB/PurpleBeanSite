@@ -1,6 +1,5 @@
 // src/data.js
-// Minimal, robust data API for the app.
-// Keeps only the 6 main product lines and provides helper exports used across components.
+// Central product data for the site — only the 6 product lines, with nested details.
 
 export const products = [
   {
@@ -8,127 +7,183 @@ export const products = [
     name: 'Green Coffee Beans',
     slug: 'green-coffee-beans',
     category: 'Green Coffee Beans',
-    description: 'High-quality unroasted Arabica and Robusta beans for domestic supply and export.',
+    description: 'Unroasted Indian Arabica and Robusta beans, carefully graded and sorted for domestic and export markets.',
     image: '/green-coffee.jpg',
-    specs: { moisture: '≤12%', grade: 'AA/AAA', origin: 'India' },
-    packing: ['50kg jute bags'],
+    types: {
+      Arabica: {
+        forms: ['Plantation', 'Cherry'],
+        grades: ['A', 'AA', 'AAA', 'PB', 'B', 'C'],
+      },
+      Robusta: {
+        forms: ['Plantation', 'Cherry'],
+        grades: ['A', 'AA', 'AAA', 'PB', 'B', 'C'],
+      },
+    },
+    specs: { moisture: '≤12%', origin: 'India', defects: 'As per buyer specification' },
+    packing: ['50kg jute bags', 'Bulk in 1 MT lots'],
     moq: '1 MT',
     certifications: ['FSSAI', 'ISO 22000'],
     price: 'Request quote',
-    features: ['Traceable lots', 'Bulk readiness']
+    features: ['Traceable lots', 'Bulk readiness', 'Sorted & graded'],
   },
+
   {
     id: 2,
     name: 'Roasted Coffee Beans',
     slug: 'roasted-coffee-beans',
     category: 'Roasted Coffee Beans',
-    description: 'Freshly roasted beans with balanced flavor and strong aroma.',
+    description: 'Freshly roasted Arabica and Robusta beans with configurable roast profiles and export-grade packing.',
     image: '/roasted-beans.jpg',
-    specs: { roast: 'Light / Medium / Dark', origin: 'India' },
-    packing: ['10kg, 25kg bags'],
+    types: {
+      Arabica: {
+        forms: ['Plantation', 'Cherry'],
+        grades: ['A', 'AA', 'AAA', 'PB', 'B', 'C'],
+      },
+      Robusta: {
+        forms: ['Plantation', 'Cherry'],
+        grades: ['A', 'AA', 'AAA', 'PB', 'B', 'C'],
+      },
+    },
+    specs: { roast: 'Light / Medium / Dark', origin: 'India', aroma: 'High' },
+    packing: ['10kg bags', '25kg bags', 'Custom retail packs'],
     moq: '500 kg',
     certifications: ['FSSAI'],
     price: 'Request quote',
-    features: ['Custom roast profiles', 'QC lab']
+    features: ['Custom roast profiles', 'In-house QC lab', 'Private label'],
   },
+
   {
     id: 3,
     name: 'Instant Coffee Powder',
     slug: 'instant-coffee-powder',
-    category: 'Instant Coffee Powder',
-    description: 'Premium spray-dried, agglomerated, and freeze-dried instant coffee powders.',
+    category: 'Instant Coffee',
+    description: 'Premium spray-dried, agglomerated, and freeze-dried instant coffee powders for industrial and retail use.',
     image: '/instant-coffee.jpg',
-    specs: { solubility: '99.5%', blends: '100% Coffee, 80:20, 70:30' },
-    packing: ['25kg bags'],
+    variants: ['Spray-Dried', 'Agglomerated', 'Freeze-Dried'],
+    blends: ['100% Coffee', '80:20', '70:30', '53:47', 'Custom Blends (by request)'],
+    specs: { solubility: '≥99%', moisture: '≤3%', bulkDensity: 'As per spec' },
+    packing: ['25kg bags', 'Jars & retail pouches on request'],
     moq: '1 MT',
     certifications: ['FSSAI'],
     price: 'Request quote',
-    features: ['High solubility', 'Industrial & retail grades']
+    features: ['High solubility', 'Industrial & retail grades', 'Custom formulation available'],
   },
+
   {
     id: 4,
     name: 'Chicory Products',
     slug: 'chicory-products',
-    category: 'Chicory Products',
-    description: 'Roasted chicory root powder and coffee–chicory blends.',
+    category: 'Chicory',
+    description: 'Food-grade chicory: instant powders, dried root and cubes for blends and beverage manufacturers.',
     image: '/chicory.jpg',
-    specs: { form: 'Roasted Powder', blends: 'Pure Chicory or Coffee Mix' },
-    packing: ['25kg bags'],
+    types: {
+      Powder: [
+        'Instant Chicory Powder (Light)',
+        'Instant Chicory Powder (Medium)',
+        'Instant Chicory Powder (Dark)',
+      ],
+      Roots: ['Dried Chicory Roots'],
+      Cubes: ['Chicory Cubes'],
+    },
+    specs: { form: 'Powder / Roots / Cubes', origin: 'India' },
+    packing: ['25kg bags', 'Custom retail packs'],
     moq: '1 MT',
     certifications: ['FSSAI'],
     price: 'Request quote',
-    features: ['Food-grade processing', 'Blend support']
+    features: ['Food-grade processing', 'Blend support', 'Private label'],
   },
+
   {
     id: 5,
-    name: 'Tea',
-    slug: 'tea',
-    category: 'Tea',
-    description: 'Wide range of CTC, Green, and Specialty teas from Indian estates.',
+    name: 'Instant Tea',
+    slug: 'instant-tea',
+    category: 'Instant Tea',
+    description: 'Instant tea solutions (Green & Black) with both cold-water-soluble and hot-water-soluble variants for flexible manufacturing.',
     image: '/tea.jpg',
-    specs: { variants: 'CTC, Green, Assam, Darjeeling', origin: 'India' },
+    // structure: variants -> category -> CWS/HWS
+    variants: {
+      Green: {
+        forms: ['Instant Green CWS (Cold Water Soluble)', 'Instant Green HWS (Hot Water Soluble)'],
+      },
+      Black: {
+        forms: ['Instant Black CWS (Cold Water Soluble)', 'Instant Black HWS (Hot Water Soluble)'],
+      },
+    },
     packing: ['25kg bulk bags', 'Custom retail packs'],
     moq: '500 kg',
     certifications: ['FSSAI'],
     price: 'Request quote',
-    features: ['CTC & specialty lots', 'Blending support']
+    features: ['CTC & specialty lots', 'Blending support', 'CWS & HWS available'],
   },
-  {
-  id: 6,
-  name: 'Brown Maltodextrin',
-  slug: 'maltodextrin',
-  category: 'Maltodextrin',
-  description: 'High-quality food-grade maltodextrin powder for use in beverages, foods, and industrial formulations.',
-  image: '/malto.jpg', // put malto.jpg directly inside public/
-  specs: { form: 'Powder', source: 'Food-grade starch', applications: 'Beverages, coffee mixes, food products' },
-  packing: ['25kg bags', 'Custom bulk packaging'],
-  moq: '500 kg',
-  certifications: ['FSSAI'],
-  price: 'Request quote',
-  features: ['Neutral taste', 'Excellent solubility', 'Food-grade quality']
-}
 
+  {
+    id: 6,
+    name: 'Maltodextrin (Brown Malto)',
+    slug: 'maltodextrin',
+    category: 'Maltodextrin / Premixes',
+    description: 'Maltodextrin for instant premixes, flavour carriers and vending solutions — also sold as Brown Malto for beverage premix applications.',
+    image: '/malto.jpg',
+    variants: ['Maltodextrin (DE 10-20)', 'Brown Malto (flavoured carrier)'],
+    specs: { solubility: 'High', dextroseEquivalent: 'DE 10-20 (typical)', origin: 'India' },
+    packing: ['1kg, 25kg bags', 'Drums for bulk supply'],
+    moq: '500 kg',
+    certifications: ['FSSAI'],
+    price: 'Request quote',
+    features: ['Custom recipes', 'OEM/private label', 'Used in 3-in-1 premixes'],
+  },
 ];
 
-// Helpful small exports used across components
+// ----------------- Helper utilities -----------------
 
-// categories: kept for backward compatibility (some components import this)
+// Minimal categories (kept for compatibility)
 export const categories = [
   'Green Coffee Beans',
   'Roasted Coffee Beans',
-  'Instant Coffee Powder',
-  'Chicory Products',
-  'Tea',
-  'Maltodextrin'
+  'Instant Coffee',
+  'Chicory',
+  'Instant Tea',
+  'Maltodextrin / Premixes',
 ];
 
-// Simple filter helper used by Navbar
-// signature: filterItems(itemsArray, query) -> returns array of { name, slug }
+// Quick search helper used by Navbar (returns {name,slug} items)
 export function filterItems(items = products, query = '') {
   if (!query || typeof query !== 'string') return [];
   const q = query.trim().toLowerCase();
   if (!q) return [];
+
   const matches = items.filter((p) => {
     const name = (p.name || '').toLowerCase();
     const slug = (p.slug || '').toLowerCase();
     const desc = (p.description || '').toLowerCase();
     const cat = (p.category || '').toLowerCase();
-    return name.includes(q) || slug.includes(q) || desc.includes(q) || cat.includes(q);
+    const variants = (p.variants && typeof p.variants === 'object')
+      ? Object.keys(p.variants).join(' ').toLowerCase() + ' ' + (Object.values(p.variants).flat().join(' ') || '')
+      : ((p.variants || []).join(' ') || '').toLowerCase();
+    const blends = (p.blends || []).join(' ').toLowerCase();
+    return (
+      name.includes(q) ||
+      slug.includes(q) ||
+      desc.includes(q) ||
+      cat.includes(q) ||
+      variants.includes(q) ||
+      blends.includes(q)
+    );
   });
+
   return matches.slice(0, 8).map((p) => ({ name: p.name, slug: p.slug }));
 }
 
-// Convenience getters used by pages
-export const getProductBySlug = (slug) => products.find((p) => p.slug === slug) || null;
-export const getProductSummaries = () => products.map((p) => ({
-  slug: p.slug,
-  title: p.name,
-  shortDescription: p.description,
-  image: p.image,
-  category: p.category,
-  price: p.price,
-}));
+// Fetch single product by slug
+export const getProductBySlug = (slug) =>
+  products.find((p) => p.slug === slug) || null;
 
-// Optional legacy export (in case some component expects `categoryStructure` or similar)
-// Keep empty/minimal to avoid runtime errors where imports still exist.
-export const categoryStructure = {};
+// Brief listings used for landing / cards
+export const getProductSummaries = () =>
+  products.map((p) => ({
+    slug: p.slug,
+    title: p.name,
+    shortDescription: p.description,
+    image: p.image,
+    category: p.category,
+    price: p.price,
+  }));

@@ -1,372 +1,310 @@
+// src/pages/About.jsx
 import { motion } from 'framer-motion';
-import { ArrowUp, MessageCircle, Award, Users, Globe, Leaf, Target, Heart, Shield, Zap } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import {
+  ArrowUp,
+  MessageCircle,
+  Award,
+  Users,
+  Globe,
+  Leaf,
+  Heart,
+  Shield,
+  Zap,
+  Calendar,
+  MapPin,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 
-const About = () => {
+const Stat = ({ value, label }) => (
+  <div className="flex flex-col items-center">
+    <div className="text-3xl md:text-4xl font-extrabold text-primary-700">{value}</div>
+    <div className="text-sm text-gray-600 mt-1">{label}</div>
+  </div>
+);
+
+const ValueCard = ({ Icon, title, description, accent }) => (
+  <motion.div
+    whileHover={{ y: -8 }}
+    className="bg-white rounded-2xl shadow-lg p-6 text-center"
+  >
+    <div className={`inline-flex items-center justify-center w-14 h-14 rounded-full mb-4 ${accent}`}>
+      <Icon className="h-6 w-6 text-white" />
+    </div>
+    <h4 className="font-semibold text-lg mb-2">{title}</h4>
+    <p className="text-sm text-gray-600 leading-relaxed">{description}</p>
+  </motion.div>
+);
+
+export default function About() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setShowScrollTop(window.scrollY > 300);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    subject: '',
-    message: '',
-  });
+  // Quick stats
+  const stats = [
+    { value: '5+ yrs', label: 'B2B experience' },
+    { value: '30+', label: 'International clients' },
+    { value: '10,000+ MT', label: 'Handled annually' },
+    { value: 'ISO / FSSAI', label: 'Certified operations' },
+  ];
 
+  // Values
   const values = [
     {
-      icon: Leaf,
-      title: 'Sustainability',
-      description: 'Committed to environmentally responsible practices and sustainable sourcing',
+      Icon: Leaf,
+      title: 'Responsible Sourcing',
+      description: 'Direct relationships with Indian growers — traceable lots and farmer support.',
+      accent: 'bg-primary-600',
     },
     {
-      icon: Shield,
-      title: 'Quality Assurance',
-      description: 'Rigorous testing and quality control at every step of our process',
+      Icon: Shield,
+      title: 'Food Safety & Quality',
+      description: 'In-house QC lab, batch testing and export-grade traceability to meet global standards.',
+      accent: 'bg-indigo-600',
     },
     {
-      icon: Heart,
-      title: 'Customer Care',
-      description: 'Building lasting relationships through exceptional service and support',
+      Icon: Heart,
+      title: 'Long-term Partnerships',
+      description: 'Tailored private-label solutions and responsive account management.',
+      accent: 'bg-rose-600',
     },
     {
-      icon: Zap,
-      title: 'Innovation',
-      description: 'Continuously improving our processes and expanding our product range',
+      Icon: Zap,
+      title: 'Continuous Innovation',
+      description: 'New roast profiles, instant coffee technologies and customized premixes.',
+      accent: 'bg-yellow-600',
     },
   ];
 
-  const timeline = [
-  { image: "/factory1.jpg" },
-  { image: "/factory2.jpg" },
-  { image: "/factory5.jpg" },
-  { image: "/factory4.jpg" },
-  { image: "/factory3.jpg" }
-];
-
-
-  const team = [
-    {
-      name: 'Utsav Jain',
-      role: 'Director',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg',
-      bio: 'Strategic leader driving the growth of our B2B coffee business through innovation, strong partnerships, and a deep understanding of global market dynamics.',
-    },
-    {
-      name: 'Mourjo Bosu',
-      role: 'Director',
-      image: 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg',
-      bio: 'Operational expert ensuring top-tier quality and regulatory standards across our coffee supply chain, with a strong focus on fulfilling the needs of clients worldwide.',
-    },
-    // {
-    //   name: 'Emily Rodriguez',
-    //   role: 'Sales Director',
-    //   image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg',
-    //   bio: 'International business development specialist',
-    // },
+  // Journey (only images)
+  const journeyImages = [
+    '/factory1.jpg',
+    '/factory2.jpg',
+    '/factory3.jpg',
+    '/factory4.jpg',
+    '/factory5.jpg',
   ];
-
-  const handleScheduleCall = () => {
-    const subject = encodeURIComponent('Schedule a Call - Purple Bean Agro');
-    const body = encodeURIComponent(
-      'Hello,\n\nI would like to schedule a call to discuss your coffee products and services.\n\nBest regards,'
-    );
-    const mailtoLink = `mailto:purplebeanagro@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
-  };
-
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="pt-16 overflow-x-hidden"
-    >
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 py-20 mt-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                About Us
-              </h1>
-              <p className="text-xl text-white/90 leading-relaxed">
-                With years of experience, we've been dedicated to providing the highest quality natural products to businesses worldwide. 
-                Our commitment to excellence, sustainability, and customer satisfaction has made us a trusted partner in the natural products industry.
-              </p>
-            </motion.div>
-            
-            <motion.img
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              src="https://img.freepik.com/premium-photo/cup-coffee-with-swirl-coffee-top-it_1049408-6990.jpg"
-              alt="Our Facility"
-              className="w-full max-w-lg rounded-xl object-cover mx-auto"
+    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pt-16 pb-24">
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-24">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div initial={{ x: -30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Purple Bean Agro — Indian origin, global standards
+            </h1>
+            <p className="mt-6 text-lg text-white/90 max-w-2xl">
+              Founded in Pune, we specialize in Green & Roasted Coffee, Instant Coffee powders, Chicory and Tea — supplying consistent, export-ready product lines and private-label solutions to partners worldwide.
+            </p>
+
+            <div className="mt-8 flex gap-3 flex-col sm:flex-row">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white text-primary-800 font-semibold shadow hover:opacity-95"
+              >
+                <MessageCircle className="h-5 w-5" /> Contact Sales
+              </Link>
+
+              <button
+                onClick={() =>
+                  window.open(
+                    'https://cal.com/purple-bean-agro-industries-pvt-ltd-wnsgkh/30min',
+                    '_blank'
+                  )
+                }
+                className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10"
+              >
+                <Calendar className="h-5 w-5" /> Schedule a Call
+              </button>
+            </div>
+
+            <div className="mt-8 grid grid-cols-2 gap-6 max-w-md">
+              {stats.map((s) => (
+                <Stat key={s.label} {...s} />
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 30, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="rounded-3xl overflow-hidden shadow-2xl"
+          >
+            <img
+              src="/factory1.jpg"
+              alt="Purple Bean Agro facility"
+              className="w-full h-full object-cover max-h-[520px]"
             />
+          </motion.div>
+        </div>
+      </section>
 
+      {/* Credibility row */}
+      <section className="max-w-7xl mx-auto px-6 mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="bg-white rounded-2xl p-5 shadow flex items-start gap-4">
+          <Award className="h-8 w-8 text-primary-600" />
+          <div>
+            <div className="font-semibold">Export Ready</div>
+            <div className="text-sm text-gray-600">COA, Phytosanitary, Invoice, Packing List</div>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow flex items-start gap-4">
+          <Users className="h-8 w-8 text-indigo-600" />
+          <div>
+            <div className="font-semibold">Farmer Partnerships</div>
+            <div className="text-sm text-gray-600">Direct sourcing, traceable supply chain</div>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow flex items-start gap-4">
+          <Globe className="h-8 w-8 text-rose-600" />
+          <div>
+            <div className="font-semibold">Global Clients</div>
+            <div className="text-sm text-gray-600">Asia, Middle East, Europe & Africa</div>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow flex items-start gap-4">
+          <Shield className="h-8 w-8 text-yellow-600" />
+          <div>
+            <div className="font-semibold">Certified Quality</div>
+            <div className="text-sm text-gray-600">FSSAI • ISO 22000</div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Values */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full">
-                <Target className="h-8 w-8 text-primary-600" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Our Mission
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                To provide premium natural products that enable businesses to create 
-                healthier, more sustainable solutions for their customers. We believe 
-                in the power of nature and are committed to preserving its integrity 
-                while making it accessible to businesses worldwide.
-              </p>
-            </motion.div>
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl font-bold">Our Values — what sets us apart</h2>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+              Traceability, food safety, and lasting partnerships — the principles that define how we work with clients worldwide.
+            </p>
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="space-y-6"
-            >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary-100 rounded-full">
-                <Globe className="h-8 w-8 text-secondary-600" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Our Vision
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                To be the world's most trusted partner in natural products, setting 
-                the standard for quality, sustainability, and innovation. We envision 
-                a future where natural solutions are the first choice for businesses 
-                seeking to improve lives and protect our planet.
-              </p>
-            </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((v) => (
+              <ValueCard key={v.title} {...v} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Journey – only images */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Values
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These core values guide everything we do and shape our relationships 
-              with partners, customers, and the environment.
+            <h2 className="text-3xl font-bold">Our Journey</h2>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+              A visual glimpse of our growth — from early days to becoming a trusted export partner.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {journeyImages.map((src, i) => (
               <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }}
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-100 text-center"
+                transition={{ delay: i * 0.1 }}
+                className="rounded-2xl overflow-hidden shadow-lg"
               >
-                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="h-8 w-8 text-primary-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
+                <img src={src} alt={`Journey ${i}`} className="w-full h-64 object-cover" />
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Map & Contact */}
+      <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-2xl font-bold">Our HQ — Pune, India</h3>
+            <p className="mt-4 text-white/90">Processing, QC and export documentation center. Visit by appointment.</p>
+            <ul className="mt-6 space-y-3 text-sm">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-white/90 mt-1" />
+                PBAI Pvt. Ltd, Factory No. 12/4, Near Dapodi Metro Station, Pune, Maharashtra 411012
+              </li>
+            </ul>
+            <div className="mt-8 flex gap-3">
+              <Link to="/contact" className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white text-primary-800 font-semibold shadow">
+                <MessageCircle className="h-4 w-4" /> Contact Us
+              </Link>
+              <button onClick={() => window.open('https://cal.com/purple-bean-agro-industries-pvt-ltd-wnsgkh/30min', '_blank')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10">
+                <Calendar className="h-4 w-4" /> Schedule Export Call
+              </button>
+            </div>
+          </div>
 
-     <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From humble beginnings to global leadership, here's how we've grown 
-              over the years while staying true to our core mission.
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-primary-200"></div>
-            
-            {timeline.map((item, index) => (
-            <motion.div
-              key={item.year}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'} mb-12`}
-            >
-              <div className={`w-full md:w-6/12 max-w-md ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'} mx-auto md:mx-0`}>
-                <div className="rounded-2xl shadow-lg w-full max-w-full overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={`Timeline event`}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
-
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
-            </motion.div>
-            ))}
+          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div className="h-72 md:h-96">
+              <iframe
+                title="Purple Bean Agro - Pune"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.798932513027!2d73.83025367443216!3d18.583101467262672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f43ed1d8f1%3A0x211f6c1df120735!2sPurple%20Bean%20Agro%20Industries%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1757524886259!5m2!1sen!2sin"
+                className="w-full h-full border-0"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-
-      {/* Team Section */}
-      {/*
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experienced professionals who guide our company's vision 
-              and ensure we deliver excellence in everything we do.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-100 overflow-hidden"
-              >
-                <div className="h-64 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-primary-600 font-medium mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    {member.bio}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+      {/* Final CTA */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <motion.h3 initial={{ y: 8, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} className="text-3xl font-bold mb-4">
+            Partner with Purple Bean Agro
+          </motion.h3>
+          <motion.p initial={{ y: 8, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} className="text-gray-600 max-w-3xl mx-auto mb-6">
+            Whether you are a distributor, importer or retailer — we deliver export-grade coffee & chicory solutions tailored to your needs.
+          </motion.p>
+          <div className="flex justify-center gap-4">
+            <Link to="/contact" className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow">
+              Get In Touch
+            </Link>
+            <button onClick={() => window.open('https://cal.com/purple-bean-agro-industries-pvt-ltd-wnsgkh/30min', '_blank')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary-200 text-primary-700">
+              Book a 30-min Call
+            </button>
           </div>
         </div>
       </section>
-      *}
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Join Our Mission
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Whether you're looking for premium natural products or exploring 
-              partnership opportunities, we'd love to hear from you.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleScheduleCall}
-              className="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
-            >
-              Get in Touch
-            </motion.button>
+      {/* Scroll top & WhatsApp */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-primary-700 shadow-lg hover:bg-primary-800 transition-all duration-100 flex items-center justify-center ${showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        aria-label="Scroll to top"
+      >
+        <ArrowUp className="h-6 w-6 text-white" />
+      </button>
 
-          </motion.div>
-        </div>
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-purple-600 shadow-lg hover:bg-purple-700 transition-all duration-100 flex items-center justify-center ${
-            showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          }`}
-          >
-            <ArrowUp className="h-6 w-6 text-white" />
-        </button>
-
-        <a
-          href="https://wa.me/918101287339?text=Hello%20Purple%20Bean%2C%20I%27m%20interested%20in%20your%20products."
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat with us on WhatsApp"
-          title="Chat with us on WhatsApp"
-          className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-200 flex items-center justify-center"
-        >
-          <MessageCircle className="h-6 w-6 text-white" />
-        </a>
-        
-      </section>
-    </motion.div>
+      <a
+        href="https://wa.me/917718781594?text=Hello%20Purple%20Bean%2C%20I%27m%20interested%20in%20your%20products."
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-200 flex items-center justify-center"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6 text-white" />
+      </a>
+    </motion.main>
   );
-};
-
-export default About;
+}

@@ -1,67 +1,64 @@
-// src/pages/ProductsLanding.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+// src/pages/Products.jsx
 import { motion } from 'framer-motion';
-import { getProductSummaries } from '../data.js'; // uses the helper in src/data.js
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { getProductSummaries } from '../data.js';
 
-const ProductsLanding = ({ searchTerm = '' }) => {
-  const all = getProductSummaries();
-  const products = all.filter((p) => {
-    if (!searchTerm) return true;
-    const q = searchTerm.toLowerCase();
-    return (
-      p.title.toLowerCase().includes(q) ||
-      (p.shortDescription && p.shortDescription.toLowerCase().includes(q)) ||
-      (p.category && p.category.toLowerCase().includes(q))
-    );
-  });
+export default function ProductsLanding() {
+  const products = getProductSummaries();
 
   return (
-    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="pt-24 pb-16">
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Product Lines</h1>
-          <p className="text-white/90 max-w-2xl mx-auto">
-            Supplying domestic markets and international buyers with premium coffee, chicory and tea. Click a product line to view specs, packing and supply options.
+    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pt-16 pb-24">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Products</h1>
+          <p className="text-lg text-white/90 max-w-3xl mx-auto">
+            Export-grade and domestic coffee, chicory and instant tea — curated for buyers, packers and private-label partners.
           </p>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((p) => (
-            <motion.article
-              key={p.slug}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -6 }}
-              className="bg-white rounded-2xl shadow overflow-hidden"
-            >
-              <div className="h-52 overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover" />
-              </div>
+      {/* Grid */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((p, idx) => (
+              <motion.article
+                key={p.slug}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.06 }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+              >
+                <Link to={`/products/${p.slug}`} className="block">
+                  <div className="h-56 overflow-hidden">
+                    <img src={p.image} alt={p.title} className="w-full h-full object-cover" />
+                  </div>
 
-              <div className="p-6">
-                <span className="inline-block px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm mb-3">
-                  {p.category || 'Product'}
-                </span>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="text-sm text-primary-600 font-medium">{p.category}</div>
+                    </div>
 
-                <h2 className="text-2xl font-semibold mb-2">{p.title}</h2>
-                <p className="text-gray-600 mb-4 line-clamp-3">{p.shortDescription}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{p.title}</h3>
 
-                <div className="flex items-center justify-between">
-                  <Link to={`/products/${p.slug}`} className="text-primary-600 font-semibold hover:underline">
-                    View product page →
-                  </Link>
-                  <span className="text-gray-900 font-bold">{p.price}</span>
-                </div>
-              </div>
-            </motion.article>
-          ))}
+                    <p className="text-gray-600 mb-4 line-clamp-3">{p.shortDescription}</p>
+
+                    <div className="flex items-center justify-between">
+                      <span className="text-lg font-semibold text-purple-500">{p.price}</span>
+                      <div className="text-primary-600 font-semibold flex items-center gap-2">
+                        <span>View</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.article>
+            ))}
+          </div>
         </div>
       </section>
     </motion.main>
   );
-};
-
-export default ProductsLanding;
+}
